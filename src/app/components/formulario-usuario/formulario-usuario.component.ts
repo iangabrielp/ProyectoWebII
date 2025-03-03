@@ -14,6 +14,9 @@ export class FormularioUsuarioComponent {
 
   nombre:any;
   email:any;
+  password:any;
+  confirmarPassword:any;
+  tipoUsuario:any;
 
   guardar(formulario:any){
     this.servicio.postUsuarios(formulario.value).subscribe(()=>{

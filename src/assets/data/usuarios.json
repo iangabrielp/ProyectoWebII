@@ -1,3 +1,36 @@
 {
-    "usuarios":[]
+  "usuarios": [
+    {
+      "id": "4c52",
+      "nombre": "Anthony Almeida",
+      "email": "aalmeida@biblioteca.com",
+      "password": "12345",
+      "confirmarPassword": "12345",
+      "tipoUsuario": "lector"
+    },
+    {
+      "id": "4930",
+      "nombre": "Gabriel Proaño",
+      "email": "gproano@biblioteca.com",
+      "password": "12345",
+      "confirmarPassword": "12345",
+      "tipoUsuario": "administrador"
+    },
+    {
+      "id": "e219",
+      "nombre": "Sandra Jerez",
+      "email": "ajerez@biblioteca.com",
+      "password": "12345",
+      "confirmarPassword": "12345",
+      "tipoUsuario": "lector"
+    },
+    {
+      "id": "8ae9",
+      "nombre": "Gabriel Olmedo",
+      "email": "golmedo@biblioteca.com",
+      "password": "12345",
+      "confirmarPassword": "12345",
+      "tipoUsuario": "autor"
+    }
+  ]
 }
