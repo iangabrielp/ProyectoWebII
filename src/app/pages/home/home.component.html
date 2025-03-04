@@ -1,26 +1,94 @@
-<div class="home-container">
-    <div class="carousel">
-      <div *ngFor="let image of images" class="carousel-item">
-        <img [src]="image.src" [alt]="image.alt">
-      </div>
+<div class="home-container bg-pink-100 text-gray-700">
+  
+  <div id="default-carousel" class="relative w-full" data-carousel="slide">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+         <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="https://media.istockphoto.com/id/1455948094/es/foto/encantadora-joven-adulta-hispana-en-un-sal%C3%B3n-de-libros.jpg?s=612x612&w=0&k=20&c=_9IBSXZPTq-nDSZ5TqSKAygNVxeCOrnmzg4gvV8sDbw=" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="https://i.blogs.es/9d0ebf/biblioteca/1366_2000.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="https://unis.edu.gt/wp-content/uploads/2024/01/Biblioteca-unis-1024x683.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="https://conaci.org.mx/nuevositio/wp-content/uploads/2015/10/blog23-usodelinternetybibliotecaescolar-conaci.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 5 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="https://britanico.edu.pe/biblioteca/wp-content/uploads/sites/4/2024/08/joven-estudiante-busca-libro-biblioteca-1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
     </div>
-    <div class="info">
-      <h1>Bienvenido a la Biblioteca Virtual</h1>
-      <p>Explora nuestro amplio catálogo de libros digitales y accede a conocimientos desde cualquier lugar.</p>
+    <!-- Slider indicators -->
+    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
     </div>
-    <div class="details">
-      <div class="detail-box">
-        <h3>+10,000 Libros</h3>
-        <p>Accede a una gran colección de libros en diversas categorías.</p>
-      </div>
-      <div class="detail-box">
-        <h3>Acceso 24/7</h3>
-        <p>Consulta libros en cualquier momento y desde cualquier dispositivo.</p>
-      </div>
-      <div class="detail-box">
-        <h3>Suscripción Premium</h3>
-        <p>Benefíciate de contenido exclusivo y funcionalidades avanzadas.</p>
-      </div>
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+  </div>
+  
+  <div class="info text-center py-8">
+    <h1 class="text-3xl font-bold text-pink-700">Bienvenido a la Biblioteca Virtual</h1>
+    <p class="mt-4">Explora nuestro amplio catálogo de libros digitales y accede a conocimientos desde cualquier lugar.</p>
+  </div>
+  
+  <div class="details grid grid-cols-1 md:grid-cols-3 gap-8 py-8">
+    <div class="detail-box p-4 bg-white rounded-lg shadow-md">
+      <h3 class="text-2xl font-semibold text-pink-700">+10,000 Libros</h3>
+      <p class="mt-2">Accede a una gran colección de libros en diversas categorías.</p>
+    </div>
+    <div class="detail-box p-4 bg-white rounded-lg shadow-md">
+      <h3 class="text-2xl font-semibold text-pink-700">Acceso 24/7</h3>
+      <p class="mt-2">Consulta libros en cualquier momento y desde cualquier dispositivo.</p>
+    </div>
+    <div class="detail-box p-4 bg-white rounded-lg shadow-md">
+      <h3 class="text-2xl font-semibold text-pink-700">Suscripción Premium</h3>
+      <p class="mt-2">Benefíciate de contenido exclusivo y funcionalidades avanzadas.</p>
     </div>
   </div>
   
+  <div class="testimonial-section py-8 bg-pink-50">
+    <div class="text-center">
+      <h2 class="text-2xl font-bold text-pink-700">Testimonios</h2>
+      <p class="mt-2">Lo que nuestros usuarios dicen de nosotros</p>
+    </div>
+    <div class="testimonials grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+      <div class="testimonial-box p-4 bg-white rounded-lg shadow-md">
+        <p class="text-gray-700">"La Biblioteca Virtual ha sido una herramienta invaluable para mi estudio. ¡Altamente recomendada!"</p>
+        <p class="text-right mt-4 text-pink-700 font-semibold">- Juan Pérez</p>
+      </div>
+      <div class="testimonial-box p-4 bg-white rounded-lg shadow-md">
+        <p class="text-gray-700">"Me encanta la variedad de libros disponibles y la facilidad de acceso en cualquier momento."</p>
+        <p class="text-right mt-4 text-pink-700 font-semibold">- María Gómez</p>
+      </div>
+      <div class="testimonial-box p-4 bg-white rounded-lg shadow-md">
+        <p class="text-gray-700">"La suscripción premium vale cada centavo. ¡El contenido exclusivo es excelente!"</p>
+        <p class="text-right mt-4 text-pink-700 font-semibold">- Carlos López</p>
+      </div>
+    </div>
+  </div>
+</div>
