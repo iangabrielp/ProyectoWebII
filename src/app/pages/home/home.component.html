@@ -1,1 +1,26 @@
-<p>home works!</p>
+<div class="home-container">
+    <div class="carousel">
+      <div *ngFor="let image of images" class="carousel-item">
+        <img [src]="image.src" [alt]="image.alt">
+      </div>
+    </div>
+    <div class="info">
+      <h1>Bienvenido a la Biblioteca Virtual</h1>
+      <p>Explora nuestro amplio catálogo de libros digitales y accede a conocimientos desde cualquier lugar.</p>
+    </div>
+    <div class="details">
+      <div class="detail-box">
+        <h3>+10,000 Libros</h3>
+        <p>Accede a una gran colección de libros en diversas categorías.</p>
+      </div>
+      <div class="detail-box">
+        <h3>Acceso 24/7</h3>
+        <p>Consulta libros en cualquier momento y desde cualquier dispositivo.</p>
+      </div>
+      <div class="detail-box">
+        <h3>Suscripción Premium</h3>
+        <p>Benefíciate de contenido exclusivo y funcionalidades avanzadas.</p>
+      </div>
+    </div>
+  </div>
+  
