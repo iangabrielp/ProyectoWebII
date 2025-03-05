@@ -5,6 +5,9 @@ import { DetalleUsuariosComponent } from './pages/detalle-usuarios/detalle-usuar
 import { NosotrosComponent } from './pages/nosotros/nosotros.component';
 import { ContactosComponent } from './pages/contactos/contactos.component';
 import { ProductosComponent } from './pages/productos/productos.component';
+import { LibrosComponent } from './pages/libros/libros.component';
+import { FormularioLibrosComponent } from './pages/formulario-libros/formulario-libros.component';
+import { DetalleLibrosComponent } from './pages/detalle-libros/detalle-libros.component';
 
 export const routes: Routes = [
     {
@@ -28,8 +31,16 @@ export const routes: Routes = [
         component:DetalleUsuariosComponent
     },
     {
-        path:'productos',
-        component:ProductosComponent
+        path:'libros',
+        component:LibrosComponent
+    },
+    {
+        path:'formulariolibros',
+        component:FormularioLibrosComponent
+    },
+    {
+        path:'libros/:idLibro',
+        component:DetalleLibrosComponent
     },
     {
         path:'',

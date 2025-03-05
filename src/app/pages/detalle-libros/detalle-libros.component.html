@@ -1,0 +1,43 @@
+<!--FORMULARIO-->
+<div class="formulario flex justify-center items-center min-h-screen bg-gray-100 formulario">
+  <div class="w-full max-w-md bg-white rounded-lg shadow-lg p-6">
+    <h2 class="text-3xl font-bold text-center text-blue-700">Registro de libros</h2>
+    <p class="text-center text-gray-600 mb-4">Accede a miles de libros digitales</p>
+    
+    <form (ngSubmit)="editar(formulario)" #formulario="ngForm" class="space-y-4">
+      <!-- Id del libro -->
+      <div>
+        <input type="text"  id="id" name="id" [(ngModel)]="id" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring focus:ring-blue-400" placeholder="Ej: La Única en la Tierra">
+      </div>
+
+      <!-- Nombre Libro -->
+      <div>
+        <label for="nombre" class="block text-sm font-medium text-gray-700">Nombre del libro</label>
+        <input type="text"  id="nombre" name="nombre" [(ngModel)]="nombre" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring focus:ring-blue-400" placeholder="Ej: La Única en la Tierra">
+      </div>
+
+      <!-- Autor -->
+      <div>
+        <label for="autor" class="block text-sm font-medium text-gray-700">Autor</label>
+        <input type="email"  id="autor" name="autor" [(ngModel)]="autor" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring focus:ring-blue-400" placeholder="Ej: Chung Serang">
+      </div>
+
+      <!-- Stock -->
+      <div>
+        <label for="stock" class="block text-sm font-medium text-gray-700">Stock</label>
+        <input type="number" id="stock" name="stock" [(ngModel)]="stock" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring focus:ring-blue-400" placeholder="0">
+      </div>
+
+      <!-- Imagen -->
+      <div>
+        <label for="img" class="block text-sm font-medium text-gray-700">URL de la portada</label>
+        <input type="text" id="img" name="img" [(ngModel)]="img" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring focus:ring-blue-400" placeholder="www.imagen.com">
+      </div>
+      
+      <!-- Botón de Registro -->
+      <button type="submit" class="w-full py-2 text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition">
+        Registrar Libro
+      </button>
+    </form>
+  </div>
+</div>

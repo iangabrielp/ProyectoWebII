@@ -1,0 +1,39 @@
+{
+  "libros": [
+    {
+      "id": "c667",
+      "nombre": "La tinta",
+      "autor": "DalasReview",
+      "stock": 24,
+      "img": "https://www.planetadelibros.com.ec/usuaris/libros/fotos/318/m_libros/317465_portada_la-tinta-mas-alla-de-la-magia_dalas-review_201710311401.jpg"
+    },
+    {
+      "id": "a2ee",
+      "nombre": "Don Quijote de la Mancha",
+      "autor": "Miguel de Cervantes",
+      "stock": 40,
+      "img": "https://images.cdn2.buscalibre.com/fit-in/360x360/73/b6/73b6fd96c31d26e2b6a3531808c1188c.jpg"
+    },
+    {
+      "id": "4f3b",
+      "nombre": "El amor en los tiempos...",
+      "autor": "Gabriel García Márquez",
+      "stock": 18,
+      "img": "https://www.mrbooks.com/mrbooks/portadas/9789585581432.webp"
+    },
+    {
+      "id": "985a",
+      "nombre": "La casa de los espíritus",
+      "autor": "Isabel Allende",
+      "stock": 67,
+      "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBIdu-XSzpB2CEPY3SPyhoY2c02SYP9bSJOAQ5MX2O2X_SSCZpMEURXFEjPzSt4qJfICwhEaZWikehyaVscFj4wol-c2UgoqDtBC_AdHrh2TH0k7T2QZ2lYXGSHQeRmfpzOYNAqCFkcw/s1600/La+casa+de+los+esp%25C3%25ADritus.jpg"
+    },
+    {
+      "id": "9ac1",
+      "nombre": "La Única en la Tierra",
+      "autor": "Chung Serang",
+      "stock": 4,
+      "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1610043927i/56201145.jpg"
+    }
+  ]
+}
