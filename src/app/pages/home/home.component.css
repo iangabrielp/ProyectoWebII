@@ -1,3 +1,112 @@
-.home-container{
-  padding: 5%;
+.bg-home {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-content: center;
+  margin-top: 8%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.text-section {
+  text-align: left;
+  width: 80%;
+}
+
+.main-text {
+  font-size: 120px;
+  font-weight: bold;
+  color: rgb(255, 255, 255); 
+  margin-bottom: 10px; 
+  line-height: 1;
+}
+
+.main-text-2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255); 
+  margin-bottom: 10px; 
+  text-align: center;
+}
+
+.sub-text {
+  font-size: 34px;
+  color: rgb(255, 255, 255);
+  width: 80%;
+}
+.images-home{
+  width: 450px; /* Ajusta el tamaño del contenedor cuadrado */
+  height: 400px; /* Igual que el ancho para mantener el cuadrado */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff; /* Fondo blanco del contenedor */
+            overflow: hidden;
+            border: 10px solid white; /* Borde blanco alrededor */
+            border-radius: 100%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Opcional, para bordes redondeados */
+}
+
+.images-home img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen dentro del contenedor sin deformarla */
+}
+
+.btn-leer{
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  margin-left: 5%;
+}
+
+.btn-leer:hover{
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.img-bg1{
+  position: absolute;
+  left: 50%;
+  top: -25px;
+  opacity: 0.5;
+  transform: rotate(45deg);
+}
+.img-bg2{
+  position: absolute;
+  left: -25px;
+  opacity: 0.5;
+  transform: rotate(45deg);
+}
+.img-bg3{
+  position: absolute;
+  opacity: 0.5;
+  top: -25px;
+  left: -60px;
+  transform: rotate(140deg);
+}
+.img-bg4{
+  position: absolute;
+  opacity: 0.5;
+  top: -60px;
+  left: -50px;
+  transform: rotate(140deg);
+}
+.img-bg5{
+  position: absolute;
+  opacity: 0.2;
+  top: 220px;
+  left: 120px;
+  transform: rotate(140deg);
+}
+.img-bg6{
+  position: absolute;
+  opacity: 0.2;
+  top: 444px;
+  left: 444px;
+  transform: rotate(140deg);
 }
