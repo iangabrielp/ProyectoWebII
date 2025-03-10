@@ -1,3 +1,5 @@
 .footer{
   border-radius: 16px;
+  justify-self: center;
+  width: 90%;
 }

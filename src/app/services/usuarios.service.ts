@@ -9,7 +9,7 @@ export class UsuariosService {
 
   constructor(private http: HttpClient) { }
 
-  private API_USUARIOS='http://localhost:3000/usuarios'
+  private API_USUARIOS='http://localhost:3000/users'
 
   //Mostrar Usuario
   getUsuario():Observable<any>{

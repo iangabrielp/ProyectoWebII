@@ -8,6 +8,10 @@ import { ProductosComponent } from './pages/productos/productos.component';
 import { LibrosComponent } from './pages/libros/libros.component';
 import { FormularioLibrosComponent } from './pages/formulario-libros/formulario-libros.component';
 import { DetalleLibrosComponent } from './pages/detalle-libros/detalle-libros.component';
+import { LoginComponent } from './pages/login/login.component';
+import { adminAuthGuard } from './guards/admin-auth.guard';
+import { authGuard } from './guards/auth.guard';
+import { usuarioAuthGuard } from './guards/usuario-auth.guard';
 
 export const routes: Routes = [
     {
@@ -20,11 +24,15 @@ export const routes: Routes = [
     },
     {
         path:'contactos',
-        component: ContactosComponent
+        component: ContactosComponent, canActivate:[usuarioAuthGuard]
     },
     {
         path:'usuarios',
         component: UsuariosComponent
+    },
+    {
+        path:'login',
+        component: LoginComponent
     },
     {
         path:'usuarios/:idUsuario',
@@ -32,11 +40,11 @@ export const routes: Routes = [
     },
     {
         path:'libros',
-        component:LibrosComponent
+        component:LibrosComponent, canActivate:[authGuard]
     },
     {
         path:'formulariolibros',
-        component:FormularioLibrosComponent
+        component:FormularioLibrosComponent, canActivate:[adminAuthGuard, authGuard]
     },
     {
         path:'libros/:idLibro',

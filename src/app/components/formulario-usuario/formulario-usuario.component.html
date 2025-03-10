@@ -2,37 +2,31 @@
 <!--FORMULARIO-->
   <div class="flex justify-center items-center min-h-screen formulario">
     <div class="w-full max-w-md bg-white rounded-lg shadow-lg p-6">
-      <h2 class="text-3xl font-bold text-center text-blue-700">Registro en la Biblioteca Virtual</h2>
+      <p class="txt-main">Registro en la Biblioteca Virtual</p>
       <p class="text-center text-gray-600 mb-4">Accede a miles de libros digitales</p>
       
       <form (ngSubmit)="guardar(formulario)" #formulario="ngForm" class="space-y-4">
         <!-- Nombre Completo -->
         <div>
-          <label for="nombre" class="block text-sm font-medium text-gray-700">Nombre Completo</label>
+          <label for="nombre" class="block text-sm font-medium text-gray-700 txt-form">Nombre Completo</label>
           <input type="text"  id="nombre" name="nombre" [(ngModel)]="nombre" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring focus:ring-blue-400" placeholder="Ej: Juan Pérez">
         </div>
 
         <!-- Correo Electrónico -->
         <div>
-          <label for="email" class="block text-sm font-medium text-gray-700">Correo Electrónico</label>
+          <label for="email" class="block text-sm font-medium text-gray-700 txt-form">Correo Electrónico</label>
           <input type="email"  id="email" name="email" [(ngModel)]="email" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring focus:ring-blue-400" placeholder="Ej: usuario@biblioteca.com">
         </div>
 
         <!-- Contraseña -->
         <div>
-          <label for="password" class="block text-sm font-medium text-gray-700">Contraseña</label>
+          <label for="password" class="block text-sm font-medium text-gray-700 txt-form">Contraseña</label>
           <input type="password" id="password" name="password" [(ngModel)]="password" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring focus:ring-blue-400" placeholder="••••••••">
-        </div>
-
-        <!-- Confirmar Contraseña -->
-        <div>
-          <label for="confirmarPassword" class="block text-sm font-medium text-gray-700">Confirmar Contraseña</label>
-          <input type="confirmarPassword" id="confirmarPassword" name="confirmarPassword" [(ngModel)]="confirmarPassword" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring focus:ring-blue-400" placeholder="••••••••">
         </div>
         
         <!-- Tipo de Usuario -->
         <div>
-          <label for="tipoUsuario" class="block text-sm font-medium text-gray-700">Tipo de Usuario</label>
+          <label for="tipoUsuario" class="block text-sm font-medium text-gray-700 txt-form">Tipo de Usuario</label>
           <select type="tipoUsuario" id="tipoUsuario" name="tipoUsuario" [(ngModel)]="tipoUsuario" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring focus:ring-blue-400">
             <option value="lector">Lector</option>
             <option value="autor">Autor</option>
@@ -43,18 +37,18 @@
         <!-- Términos y Condiciones -->
         <div class="flex items-center">
           <input type="checkbox" class="mr-2">
-          <label class="text-sm text-gray-600">Acepto los <a href="#" class="text-blue-500 hover:underline">términos y condiciones</a></label>
+          <label class="text-sm text-gray-600">Acepto los <a href="#" class="text-blue-500 hover:underline txt-form">términos y condiciones</a></label>
         </div>
 
         <!-- Botón de Registro -->
-        <button type="submit" class="w-full py-2 text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition">
+        <button type="submit" class="btn-submit">
           Registrarse
         </button>
       </form>
     </div>
   </div>
 
-
+<p class="txt-terminos">Entiendes y aceptas que esta plataforma recopila y utiliza datos de forma ética y conforme a su política de privacidad. Al iniciar sesión, otorgas tu consentimiento para la recopilación, procesamiento y almacenamiento de datos necesarios para brindarte un servicio óptimo, incluyendo fines de mejora continua y análisis. Es tu deber revisar periódicamente estos términos y condiciones, ya que nos reservamos el derecho de modificarlos en cualquier momento. El uso continuado de la plataforma implicará tu aceptación de las modificaciones realizadas.</p>
 
   <img width="120" height="120" class="img-bgA" src="https://img.icons8.com/?size=100&id=Pa7h0WwjTpPz&format=png&color=000000" style="filter: invert(1);">
   <img width="220" height="220" class="img-bgB" src="https://img.icons8.com/?size=100&id=20472&format=png&color=000000" style="filter: invert(1);">
@@ -64,7 +58,7 @@
   <img width="120" height="120" class="img-bgF" src="https://img.icons8.com/?size=100&id=Pa7h0WwjTpPz&format=png&color=000000" style="filter: invert(1);">
 
   
-  <img width="120" height="120" class="img-bgA1" src="https://img.icons8.com/?size=100&id=Pa7h0WwjTpPz&format=png&color=000000" style="filter: invert(1);">
+
   <img width="220" height="220" class="img-bgB1" src="https://img.icons8.com/?size=100&id=20472&format=png&color=000000" style="filter: invert(1);">
   <img width="220" height="220" class="img-bgC1" src="https://img.icons8.com/?size=100&id=118834&format=png&color=000000" style="filter: invert(1);">
   <img width="220" height="220" class="img-bgD1" src="https://img.icons8.com/?size=100&id=118834&format=png&color=000000" style="filter: invert(1);">

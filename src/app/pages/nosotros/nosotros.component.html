@@ -1,433 +1,143 @@
-
-<div class="about-container nosotros" >
-  <div class="about-header text-center py-8">
-
-  <!-- Contenedor centrado del carrusel -->
-  <div class="w-full max-w-4xl mx-auto p-4 bg-white rounded-lg shadow-lg">
-    <!-- Carrusel de Flowbite -->
-    <div id="elegantCarousel" class="relative" data-carousel="slide">
-      <!-- Contenedor de items -->
-      <div class="relative h-96 overflow-hidden rounded-lg">
+<div class="nosotros">
+  <div class="carrousel-nosotros">
+    <div id="animation-carousel" class="relative w-full" data-carousel="static">
+      <!-- Carousel wrapper -->
+      <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
         <!-- Item 1 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="https://images.pexels.com/photos/3646172/pexels-photo-3646172.jpeg?auto=compress&cs=tinysrgb&w=600" 
-               class="block w-full h-full object-cover" 
-               alt="Slide 1" />
+        <div class="hidden duration-200 ease-linear" data-carousel-item>
+          <img src="https://st2.depositphotos.com/3591429/5246/i/450/depositphotos_52461497-stock-photo-people-reading-books.jpg"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
         <!-- Item 2 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="https://images.pexels.com/photos/3490856/pexels-photo-3490856.jpeg?auto=compress&cs=tinysrgb&w=600" 
-               class="block w-full h-full object-cover" 
-               alt="Slide 2" />
+        <div class="hidden duration-200 ease-linear" data-carousel-item>
+          <img src="https://previews.123rf.com/images/dolgachov/dolgachov1608/dolgachov160808247/61743204-las-personas-el-conocimiento-la-educaci%C3%B3n-y-la-escuela-concepto-grupo-de-estudiantes-felices.jpg"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
         <!-- Item 3 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="https://images.pexels.com/photos/6549377/pexels-photo-6549377.jpeg?auto=compress&cs=tinysrgb&w=600" 
-               class="block w-full h-full object-cover" 
-               alt="Slide 3" />
+        <div class="hidden duration-200 ease-linear" data-carousel-item="active">
+          <img src="https://previews.123rf.com/images/andreypopov/andreypopov1808/andreypopov180801023/107017363-grupo-de-personas-sentadas-en-un-c%C3%ADrculo-leyendo-libros.jpg"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
         <!-- Item 4 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="https://images.pexels.com/photos/3494806/pexels-photo-3494806.jpeg?auto=compress&cs=tinysrgb&w=600" 
-               class="block w-full h-full object-cover" 
-               alt="Slide 4" />
+        <div class="hidden duration-200 ease-linear" data-carousel-item>
+          <img src="https://images.unsplash.com/photo-1532294220147-279399e4e00f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cGVyc29uYSUyMGxleWVuZG98ZW58MHx8MHx8fDA%3D"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 5 -->
+        <div class="hidden duration-200 ease-linear" data-carousel-item>
+          <img src="https://media.istockphoto.com/id/654715790/es/foto/estudiante-en-la-biblioteca.jpg?s=612x612&w=0&k=20&c=-DWFdBWxLPBbGkGv-rEownRnwHRPRQ-z-7KxfyhEuaA="
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
       </div>
-      
-      <!-- Indicadores -->
-      <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-        <button type="button" class="w-3 h-3 rounded-full bg-gray-600" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-        <button type="button" class="w-3 h-3 rounded-full bg-gray-600/50 hover:bg-gray-600" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-        <button type="button" class="w-3 h-3 rounded-full bg-gray-600/50 hover:bg-gray-600" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-      </div>
-      <!-- Controles -->
-      <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50">
-          <svg aria-hidden="true" class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+      <!-- Slider controls -->
+      <button type="button"
+        class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-prev>
+        <span
+          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M5 1 1 5l4 4" />
           </svg>
-          <span class="sr-only">Anterior</span>
+          <span class="sr-only">Previous</span>
         </span>
       </button>
-      <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50">
-          <svg aria-hidden="true" class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+      <button type="button"
+        class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-next>
+        <span
+          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="m1 9 4-4-4-4" />
           </svg>
-          <span class="sr-only">Siguiente</span>
+          <span class="sr-only">Next</span>
         </span>
       </button>
     </div>
   </div>
-
-  <!-- Código TypeScript/JavaScript (Flowbite se inicializa automáticamente) -->
-  <script type="module">
-    // Aquí puedes agregar código TypeScript adicional si lo necesitas.
-  </script>
-<br><br>
-<!-- Encabezado -->
-<div class="flex flex-col items-center justify-center text-center p-6">
-  <h1 class="mb-4 text-2xl font-extrabold text-gray-900 dark:text-white md:text-4xl lg:text-5xl">
-    <span class="block text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-emerald-600">
-      한국 선생님
-    </span>
-    <span class="block">
-      Sobre Nosotros
-    </span>
-  </h1>
-
-  <!-- Línea sutil y elegante -->
-  <hr class="w-1/2 border-t border-gray-300 my-4" />
-  
-  <p class="text-base font-normal text-gray-500 lg:text-lg dark:text-gray-400">
-    Conoce más sobre nuestra biblioteca virtual, nuestros productos y todo lo que nos caracteriza como la mejor tienda online de libros.
-  </p>
-</div>
-<br><br>
-
-<!-- Tarjetas -->
- 
-<div class="container mx-auto">
-  <!-- Primera fila: 4 tarjetas -->
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-8 ">
-    <!-- Tarjeta 1 -->
-    <div class="max-w-xs bg-green border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-      <div class="flex justify-center">
-        <img class="p-4 rounded-t-lg just"  src="https://st.booknet.com/uploads/covers/220/1721247016_40.png" alt="Imagen de producto" />
-      </div>
-      <div class="px-5 pb-5">
-        <a href="#">
-          <h5 class="text-lg font-semibold tracking-tight text-gray-900 dark:text-white">
-          Shazet Robles: Un Amor para el Presidente 
-          </h5>
-        </a>
-        <div class="flex items-center mt-2.5 mb-5">
-          <div class="flex items-center space-x-1">
-            <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-            </svg>
-            <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-            </svg>
-            <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-            </svg>
-            <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-            </svg>
-          </div>
-          <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-sm dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
-        </div>
-        <div class="flex items-center justify-between">
-          <span class="text-xl font-bold text-gray-900 dark:text-white">$599</span>
-          <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xs px-3 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            Add to cart
-          </a>
-        </div>
-      </div>
-    </div>
-    <!-- Tarjeta 2 -->
-    <div class="max-w-xs bg-green border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-      <a href="#">
-        <div class="flex justify-center">
-        <img class="p-4 rounded-t-lg" src="https://st.booknet.com/uploads/covers/220/1718140700_22.png" alt="Imagen de producto" />
-      </div>
-      </a>
-      <div class="px-5 pb-5">
-        <a href="#">
-          <h5 class="text-lg font-semibold tracking-tight text-gray-900 dark:text-white">
-            Andrea RM: Mi Pequeña, mi Secreto
-          </h5>
-        </a>
-        <div class="flex items-center mt-2.5 mb-5">
-          <div class="flex items-center space-x-1">
-            <!-- Repite los iconos de estrellas aquí -->
-            <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-            </svg>
-            <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-            </svg>
-            <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-            </svg>
-            <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-            </svg>
-          </div>
-          <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-sm dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
-        </div>
-        <div class="flex items-center justify-between">
-          <span class="text-xl font-bold text-gray-900 dark:text-white">$14.99</span>
-          <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xs px-3 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            Add to cart
-          </a>
-        </div>
-      </div>
-    </div>
-    <!-- Tarjeta 3 -->
-    <div class="max-w-xs bg-green border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-      <a href="#">
-        <div class="flex justify-center">
-        <img class="p-4 rounded-t-lg" src="https://st.booknet.com/uploads/covers/220/1736293575_73.png" alt="Imagen de producto" />
-        </div>
-      </a>
-      <div class="px-5 pb-5">
-        <a href="#">
-          <h5 class="text-lg font-semibold tracking-tight text-gray-900 dark:text-white">
-            Lisbet Chacon: Las Princesas del Mafioso
-          </h5>
-        </a>
-        <div class="flex items-center mt-2.5 mb-5">
-          <div class="flex items-center space-x-1">
-            <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-            </svg>
-            <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-            </svg>
-            <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-            </svg>
-            <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-            </svg>
-          </div>
-          <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-sm dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
-        </div>
-        <div class="flex items-center justify-between">
-          <span class="text-xl font-bold text-gray-900 dark:text-white">$709,99</span>
-          <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xs px-3 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            Add to cart
-          </a>
-        </div>
-      </div>
-    </div>
-    <!-- Tarjeta 4 -->
-    <div class="max-w-xs bg-green border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-      <a href="#">
-        <div class="flex justify-center">
-        <img class="p-4 rounded-t-lg" src="https://st.booknet.com/uploads/covers/220/1651887435_31.png" alt="Imagen de producto" />
-      </div>
-      </a>
-      <div class="px-5 pb-5">
-        <a href="#">
-          <h5 class="text-lg font-semibold tracking-tight text-gray-900 dark:text-white">
-            Kelly Bonilla, Sr. Le Roux
-          </h5>
-        </a>
-        <div class="flex items-center mt-2.5 mb-5">
-          <div class="flex items-center space-x-1">
-            <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-            </svg>
-            <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-            </svg>
-            <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-            </svg>
-            <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-            </svg>
-          </div>
-          <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-sm dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
-        </div>
-        <div class="flex items-center justify-between">
-          <span class="text-xl font-bold text-gray-900 dark:text-white">$309,99</span>
-          <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xs px-3 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            Add to cart
-          </a>
-        </div>
-      </div>
-    </div>
+  <div class="txt-nosotros-main">
+    <h2>Nosotros</h2>
+    <p>En 한국 선생님, creemos en el poder transformador del conocimiento. Somos una biblioteca virtual que tiene como misión acercar el aprendizaje y la cultura a personas de todas las edades, intereses y rincones del mundo. Nuestro objetivo es ofrecer recursos educativos accesibles y de alta calidad que impulsen el crecimiento personal y profesional de nuestros usuarios.</p>
+    <p>Fundada con una visión global y un profundo respeto por la diversidad, 한국 선생님 reúne una amplia gama de contenidos en múltiples idiomas y disciplinas. Desde literatura clásica hasta temas contemporáneos, desde textos académicos hasta materiales interactivos, buscamos ser el puente entre el conocimiento y quienes desean alcanzarlo.</p>
+    <p>Nos esforzamos por crear una experiencia enriquecedora para todos nuestros usuarios, fomentando la curiosidad, la creatividad y el deseo de aprender continuamente. En 한국 선생님, no solo ofrecemos libros; ofrecemos puertas hacia un mundo de posibilidades.</p>
   </div>
-  <!-- Segunda fila: 3 tarjetas -->
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-    <!-- Tarjeta 5 -->
-    <div class="max-w-xs bg-green border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+
+  <div class="images-home flex space-x-4">
+    <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
       <a href="#">
-        <div class="flex justify-center">
-        <img class="p-4 rounded-t-lg" src="https://st.booknet.com/uploads/covers/220/1711842740_53.png" alt="Imagen de producto" />
-      </div>
+        <img class="rounded-lg object-cover w-full h-full" style="aspect-ratio: 1/1;"
+          src="https://images.pexels.com/photos/3060324/pexels-photo-3060324.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="image description">
       </a>
-      <div class="px-5 pb-5">
-        <a href="#">
-          <h5 class="text-lg font-semibold tracking-tight text-gray-900 dark:text-white">
-            Violeta Queen: Una Esposa para el Alfa
-          </h5>
-        </a>
-        <div class="flex items-center mt-2.5 mb-5">
-          <div class="flex items-center space-x-1">
-            <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-            </svg>
-            <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-            </svg>
-            <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-            </svg>
-            <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-            </svg>
-          </div>
-          <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-sm dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
-        </div>
-        <div class="flex items-center justify-between">
-          <span class="text-xl font-bold text-gray-900 dark:text-white">$7,99</span>
-          <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xs px-3 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            Add to cart
-          </a>
-        </div>
-      </div>
-    </div>
-    <!-- Tarjeta 6 -->
-    <div class="max-w-xs bg-green border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+      <figcaption class="absolute px-4 text-lg text-white bottom-6">
+        <p>Perfecto para disfrutar de los mejores momentos</p>
+      </figcaption>
+    </figure>
+
+    <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
       <a href="#">
-        <div class="flex justify-center">
-        <img class="p-4 rounded-t-lg" src="https://st.booknet.com/uploads/covers/220/1656969634_29.jpg" alt="Imagen de producto" />
-      </div>
+        <img class="rounded-lg object-cover w-full h-full" style="aspect-ratio: 1/1;"
+          src="https://images.unsplash.com/photo-1573497490701-f84eda04e280?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGVyc29uYSUyMGxleWVuZG98ZW58MHx8MHx8fDA%3D"
+          alt="image description">
       </a>
-      <div class="px-5 pb-5">
-        <a href="#">
-          <h5 class="text-lg font-semibold tracking-tight text-gray-900 dark:text-white">
-            Tala Tozka: Doble Secreto para un Multimillonario
-          </h5>
-        </a>
-        <div class="flex items-center mt-2.5 mb-5">
-          <div class="flex items-center space-x-1">
-            <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-            </svg>
-            <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-            </svg>
-            <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-            </svg>
-            <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-            </svg>
-          </div>
-          <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-sm dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
-        </div>
-        <div class="flex items-center justify-between">
-          <span class="text-xl font-bold text-gray-900 dark:text-white">$124,99</span>
-          <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xs px-3 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            Add to cart
-          </a>
-        </div>
-      </div>
-    </div>
-    <!-- Tarjeta 7 -->
-    <div class="max-w-xs bg-green border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+      <figcaption class="absolute px-4 text-lg text-white bottom-6">
+        <p>Prueba Fanta en diferentes modelos</p>
+      </figcaption>
+    </figure>
+
+    <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
       <a href="#">
-        <div class="flex justify-center">
-        <img class="p-4 rounded-t-lg" src="https://st.booknet.com/uploads/covers/220/1729465929_30.png" alt="Imagen de producto" />
-      </div>
+        <img class="rounded-lg object-cover w-full h-full" style="aspect-ratio: 1/1;"
+          src="https://ellibre.es/wp-content/uploads/2025/01/gente-leyendo.jpg" alt="image description">
       </a>
-      <div class="px-5 pb-5">
-        <a href="#">
-          <h5 class="text-lg font-semibold tracking-tight text-gray-900 dark:text-white">
-            Meiling Soza: El Desastre de Thea
-          </h5>
-        </a>
-        <div class="flex items-center mt-2.5 mb-5">
-          <div class="flex items-center space-x-1">
-            <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-            </svg>
-            <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-            </svg>
-            <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-            </svg>
-            <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-            </svg>
-          </div>
-          <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-sm dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
-        </div>
-        <div class="flex items-center justify-between">
-          <span class="text-xl font-bold text-gray-900 dark:text-white">$459,99</span>
-          <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xs px-3 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            Add to cart
-          </a>
-        </div>
-      </div>
-    </div>
+      <figcaption class="absolute px-4 text-lg text-white bottom-6">
+        <p>Prueba estas nuevas ediciones!</p>
+      </figcaption>
+    </figure>
+    <figure class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
+      <a href="#">
+        <img class="rounded-lg object-cover w-full h-full" style="aspect-ratio: 1/1;"
+          src="https://img.freepik.com/foto-gratis/vista-lateral-personas-leyendo-juntas_23-2150062161.jpg" alt="image description">
+      </a>
+      <figcaption class="absolute px-4 text-lg text-white bottom-6">
+        <p>Prueba estas nuevas ediciones!</p>
+      </figcaption>
+    </figure>
   </div>
+
+  <button type="button" (click)="logout()"
+  class="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Cerrar
+  Sesion</button>
+
 </div>
 
-<br><br>
-<!-- Encabezado -->
-<div class="flex flex-col items-center justify-center text-center p-6">
-  <h1 class="mb-4 text-2xl font-extrabold text-gray-900 dark:text-white md:text-4xl lg:text-5xl">
-    
-    <span class="block">
-      EDITORIALES
-    </span>
-  </h1>
-<br>
-<!-- CARRUSEL LOGOS -->
-<!-- Contenedor del carrusel -->
-<div class="overflow-hidden w-full py-6">
-  <div class="whitespace-nowrap flex items-center animate-scroll">
-    <!-- Logos de empresas -->
-    <img src="https://storeech.com/wp-content/uploads/Marca-xtech.png" class="h-16 mx-6" alt="Apple">
-    <img src="https://storeech.com/wp-content/uploads/Logo-xiaomi.png" class="h-16 mx-6" alt="Microsoft">
-    <img src="https://storeech.com/wp-content/uploads/Logo-wacom.png" class="h-16 mx-6" alt="Google">
-    <img src="https://storeech.com/wp-content/uploads/Logo-xiaomi.png" class="h-16 mx-6" alt="Microsoft">
-    <img src="https://storeech.com/wp-content/uploads/marca-razer.jpg" class="h-16 mx-6" alt="Logitech">
-    <img src="https://storeech.com/wp-content/uploads/Logo-primus-gaming.png" class="h-16 mx-6" alt="Google">
-    <img src="https://storeech.com/wp-content/uploads/Marca-nexxt.png" class="h-16 mx-6" alt="Samsung">
-    
-    
-    <!-- Se duplican los logos para que el scroll sea continuo -->
-    <img src="https://storeech.com/wp-content/uploads/Marca-xtech.png" class="h-16 mx-6" alt="Apple">
-    <img src="https://storeech.com/wp-content/uploads/Logo-xiaomi.png" class="h-16 mx-6" alt="Microsoft">
-    <img src="https://storeech.com/wp-content/uploads/Logo-wacom.png" class="h-16 mx-6" alt="Google">
-    <img src="https://storeech.com/wp-content/uploads/Logo-xiaomi.png" class="h-16 mx-6" alt="Microsoft">
-    <img src="https://storeech.com/wp-content/uploads/marca-razer.jpg" class="h-16 mx-6" alt="Logitech">
-    <img src="https://storeech.com/wp-content/uploads/Logo-primus-gaming.png" class="h-16 mx-6" alt="Google">
-    <img src="https://storeech.com/wp-content/uploads/Marca-nexxt.png" class="h-16 mx-6" alt="Samsung">
-    
- 
-  </div>
-</div>
 
-<!-- Animaciones con Tailwind CSS -->
-<style>
-  @keyframes scroll {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-100%);
-    }
-  }
-  
-  .animate-scroll {
-    display: inline-flex;
-    animation: scroll 10s linear infinite;
-  }
-</style>
+<img width="120" height="120" class="img-bg1"
+  src="https://img.icons8.com/?size=100&id=Pa7h0WwjTpPz&format=png&color=000000" style="filter: invert(1);">
+<img width="220" height="220" class="img-bg2" src="https://img.icons8.com/?size=100&id=20472&format=png&color=000000"
+  style="filter: invert(1);">
+<img width="220" height="220" class="img-bg3" src="https://img.icons8.com/?size=100&id=118834&format=png&color=000000"
+  style="filter: invert(1);">
+<img width="220" height="220" class="img-bg4" src="https://img.icons8.com/?size=100&id=118834&format=png&color=000000"
+  style="filter: invert(1);">
+<img width="100" height="100" class="img-bg5" src="https://img.icons8.com/?size=100&id=20472&format=png&color=000000"
+  style="filter: invert(1);">
+<img width="120" height="120" class="img-bg6"
+  src="https://img.icons8.com/?size=100&id=Pa7h0WwjTpPz&format=png&color=000000" style="filter: invert(1);">
 
 
-
-<img width="120" height="120" class="img-bg1" src="https://img.icons8.com/?size=100&id=Pa7h0WwjTpPz&format=png&color=000000" style="filter: invert(1);">
-<img width="220" height="220" class="img-bg2" src="https://img.icons8.com/?size=100&id=20472&format=png&color=000000" style="filter: invert(1);">
-<img width="220" height="220" class="img-bg3" src="https://img.icons8.com/?size=100&id=118834&format=png&color=000000" style="filter: invert(1);">
-<img width="220" height="220" class="img-bg4" src="https://img.icons8.com/?size=100&id=118834&format=png&color=000000" style="filter: invert(1);">
-<img width="100" height="100" class="img-bg5" src="https://img.icons8.com/?size=100&id=20472&format=png&color=000000" style="filter: invert(1);">
-<img width="120" height="120" class="img-bg6" src="https://img.icons8.com/?size=100&id=Pa7h0WwjTpPz&format=png&color=000000" style="filter: invert(1);">
-
-
-<img width="120" height="120" class="img-bg7" src="https://img.icons8.com/?size=100&id=Pa7h0WwjTpPz&format=png&color=000000" style="filter: invert(1);">
-<img width="220" height="220" class="img-bg8" src="https://img.icons8.com/?size=100&id=20472&format=png&color=000000" style="filter: invert(1);">
-<img width="220" height="220" class="img-bg9" src="https://img.icons8.com/?size=100&id=118834&format=png&color=000000" style="filter: invert(1);">
-<img width="220" height="220" class="img-bg10" src="https://img.icons8.com/?size=100&id=118834&format=png&color=000000" style="filter: invert(1);">
-<img width="100" height="100" class="img-bg11" src="https://img.icons8.com/?size=100&id=20472&format=png&color=000000" style="filter: invert(1);">
-<img width="120" height="120" class="img-bg12" src="https://img.icons8.com/?size=100&id=Pa7h0WwjTpPz&format=png&color=000000" style="filter: invert(1);">
+<img width="120" height="120" class="img-bg7"
+  src="https://img.icons8.com/?size=100&id=Pa7h0WwjTpPz&format=png&color=000000" style="filter: invert(1);">
+<img width="220" height="220" class="img-bg8" src="https://img.icons8.com/?size=100&id=20472&format=png&color=000000"
+  style="filter: invert(1);">
+<img width="220" height="220" class="img-bg9" src="https://img.icons8.com/?size=100&id=118834&format=png&color=000000"
+  style="filter: invert(1);">
+<img width="220" height="220" class="img-bg10" src="https://img.icons8.com/?size=100&id=118834&format=png&color=000000"
+  style="filter: invert(1);">
+<img width="100" height="100" class="img-bg11" src="https://img.icons8.com/?size=100&id=20472&format=png&color=000000"
+  style="filter: invert(1);">
+<img width="120" height="120" class="img-bg12"
+  src="https://img.icons8.com/?size=100&id=Pa7h0WwjTpPz&format=png&color=000000" style="filter: invert(1);">

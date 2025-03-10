@@ -9,5 +9,22 @@ import { RouterModule } from '@angular/router';
   styleUrl: './nav.component.css'
 })
 export class NavComponent {
-
+  autenticacion():boolean{
+    if(typeof window!=='undefined' && window.localStorage){
+    return localStorage.getItem('login')==='true';
+    }
+    return false;
+  }
+  usuarioAuth():boolean{
+    if(typeof window!=='undefined' && window.localStorage){
+      return localStorage.getItem('usuario')==='true';
+    }
+    return false;
+  }
+  adminAuth():boolean{
+    if(typeof window!=='undefined' && window.localStorage){
+      return localStorage.getItem('admin')==='true';
+    }
+    return false;
+  }
 }

@@ -3,6 +3,18 @@
   overflow: hidden;            
   text-overflow: ellipsis;     
 }
+.main-text-2 {
+  margin-top: 5%;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255); 
+  margin-bottom: 10px; 
+  text-align: center;
+}
+
+.productos{
+  background-color: aliceblue;
+}
 
 .img-bgA{
   position: absolute;

@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "email": "cgp4762@gmail.com",
+      "password": "$2a$10$YNOV/PCGRoZLnz6DTy15e.v8L8qUSC31uMoBfXbhAg4fiSOvBg9eK",
+      "id": 1,
+      "nombre": "Gabriel Olmedo",
+      "tipoUsuario": "autor"
+    },
+    {
+      "email": "karen@gmail.com",
+      "password": "$2a$10$grOWFAVI/VDb/pPtz7rKIesm9PrNt5mYl9okj24UM.luF9dG4iWGC",
+      "nombre": "Karen Gavilanes",
+      "tipoUsuario": "autor",
+      "id": 2
+    }
+  ]
+}

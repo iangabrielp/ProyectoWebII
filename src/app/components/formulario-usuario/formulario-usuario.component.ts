@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { UsuariosService } from '../../services/usuarios.service';
+import { RegisterService } from '../../services/register.service';
 
 @Component({
   selector: 'app-formulario-usuario',
@@ -10,20 +11,17 @@ import { UsuariosService } from '../../services/usuarios.service';
   styleUrl: './formulario-usuario.component.css'
 })
 export class FormularioUsuarioComponent {
-  constructor (private servicio: UsuariosService){}
+  constructor (private servicio: RegisterService){}
 
   nombre:any;
   email:any;
   password:any;
-  confirmarPassword:any;
   tipoUsuario:any;
 
   guardar(formulario:any){
-    this.servicio.postUsuarios(formulario.value).subscribe(()=>{
+    this.servicio.postRegistro(formulario.value).subscribe(()=>{
       window.location.reload()
     });
-    
-
   }
 
 
