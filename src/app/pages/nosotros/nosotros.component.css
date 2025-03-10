@@ -42,3 +42,53 @@
   left: 444px;
   transform: rotate(140deg);
 }
+.img-bg7 {
+  position: absolute;
+  right: 0;  /* Coloca el elemento a la derecha */
+  top: -25px;
+  opacity: 0.5;
+  transform: rotate(45deg);
+}
+
+.img-bg8 {
+  position: absolute;
+  right: 0;  /* Coloca el elemento a la derecha */
+  opacity: 0.5;
+  transform: rotate(45deg);
+}
+
+.img-bg9 {
+  position: absolute;
+  right: 0;  /* Coloca el elemento a la derecha */
+  opacity: 0.5;
+  top: -25px;
+  left: -60px;
+  transform: rotate(140deg);
+}
+
+.img-bg10 {
+  position: absolute;
+  right: 0;  /* Coloca el elemento a la derecha */
+  opacity: 0.5;
+  top: -60px;
+  left: -50px;
+  transform: rotate(140deg);
+}
+
+.img-bg11 {
+  position: absolute;
+  right: 0;  /* Coloca el elemento a la derecha */
+  opacity: 0.2;
+  top: 220px;
+  left: 120px;
+  transform: rotate(140deg);
+}
+
+.img-bg12 {
+  position: absolute;
+  right: 0;  /* Coloca el elemento a la derecha */
+  opacity: 0.2;
+  top: 444px;
+  left: 444px;
+  transform: rotate(140deg);
+}
