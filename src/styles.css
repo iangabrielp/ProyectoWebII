@@ -4,7 +4,6 @@ body {
   background: linear-gradient(to bottom right, #00B566, #80EE83);
   display: flex;
   font-family: Arial, sans-serif;
-  color: white;
   justify-content: center;
   justify-items: center;
 }
