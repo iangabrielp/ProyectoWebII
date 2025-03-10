@@ -41,16 +41,16 @@
   width: 80%;
 }
 .images-home{
-  width: 450px; /* Ajusta el tamaño del contenedor cuadrado */
-  height: 400px; /* Igual que el ancho para mantener el cuadrado */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #fff; /* Fondo blanco del contenedor */
-            overflow: hidden;
-            border: 10px solid white; /* Borde blanco alrededor */
-            border-radius: 100%;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Opcional, para bordes redondeados */
+  width: 450px;
+  height: 400px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  overflow: hidden;
+  border: 10px solid white; 
+  border-radius: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); 
 }
 
 .images-home img {
@@ -70,6 +70,7 @@
 
 
 .img-bg1{
+  z-index: -1;  
   position: absolute;
   left: 50%;
   top: -25px;
@@ -77,12 +78,14 @@
   transform: rotate(45deg);
 }
 .img-bg2{
+  z-index: -1;
   position: absolute;
   left: -25px;
   opacity: 0.5;
   transform: rotate(45deg);
 }
 .img-bg3{
+  z-index: -1;
   position: absolute;
   opacity: 0.5;
   top: -25px;
@@ -90,6 +93,7 @@
   transform: rotate(140deg);
 }
 .img-bg4{
+  z-index: -1;
   position: absolute;
   opacity: 0.5;
   top: -60px;
@@ -97,6 +101,7 @@
   transform: rotate(140deg);
 }
 .img-bg5{
+  z-index: -1;
   position: absolute;
   opacity: 0.2;
   top: 220px;
@@ -104,9 +109,26 @@
   transform: rotate(140deg);
 }
 .img-bg6{
+  z-index: -1;
   position: absolute;
   opacity: 0.2;
   top: 444px;
   left: 444px;
   transform: rotate(140deg);
+}
+.img-bg7{
+  z-index: -1;
+  position: absolute;
+  opacity: 0.4;
+  top: 200px;
+  right: 550px;
+  transform: rotate(60deg);
+}
+.img-bg8{
+  z-index: -1;
+  position: absolute;
+  opacity: 0.4;
+  bottom: 400px;
+  right: 200px;
+  transform: rotate(60deg);
 }
