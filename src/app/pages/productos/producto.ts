@@ -1,6 +1,6 @@
 export interface Producto{
   nombre:string,
-  autor:string,
-  stock:number,
+  cantidad:number,
+  precio:number,
   img:string
 }

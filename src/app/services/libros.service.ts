@@ -9,7 +9,7 @@ export class LibrosService {
 
   constructor(private http: HttpClient) { }
 
-  private API_LIBROS = 'http://localhost:3000/libros';
+  private API_LIBROS = 'https://app-fire-242a8-default-rtdb.firebaseio.com/libros.json';
 
   //Guardar Libro
   postLibros(libro:any):Observable<any>{

@@ -12,6 +12,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { adminAuthGuard } from './guards/admin-auth.guard';
 import { authGuard } from './guards/auth.guard';
 import { usuarioAuthGuard } from './guards/usuario-auth.guard';
+import { CatalogoComponent } from './pages/catalogo/catalogo.component';
+import { CarritoUsuarioComponent } from './pages/carrito-usuario/carrito-usuario.component';
 
 export const routes: Routes = [
     {
@@ -49,6 +51,14 @@ export const routes: Routes = [
     {
         path:'libros/:idLibro',
         component:DetalleLibrosComponent
+    },
+    {
+        path:'catalogo',
+        component:CatalogoComponent
+    },
+    {
+        path:'carrito',
+        component:CarritoUsuarioComponent
     },
     {
         path:'',

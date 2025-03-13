@@ -1,6 +1,7 @@
 
 
 .img-bgA{
+  z-index: -1;
   position: absolute;
   left: 50%;
   top: -25px;
@@ -8,12 +9,14 @@
   transform: rotate(45deg);
 }
 .img-bgB{
+  z-index: -1;
   position: absolute;
   left: -25px;
   opacity: 0.5;
   transform: rotate(45deg);
 }
 .img-bgC{
+  z-index: -1;
   position: absolute;
   opacity: 0.5;
   top: -25px;
@@ -21,6 +24,7 @@
   transform: rotate(140deg);
 }
 .img-bgD{
+  z-index: -1;
   position: absolute;
   opacity: 0.5;
   top: -60px;
@@ -28,6 +32,7 @@
   transform: rotate(140deg);
 }
 .img-bgE{
+  z-index: -1;
   position: absolute;
   opacity: 0.2;
   top: 220px;
@@ -35,6 +40,7 @@
   transform: rotate(140deg);
 }
 .img-bgF{
+  z-index: -1;
   position: absolute;
   opacity: 0.2;
   top: 444px;
@@ -43,6 +49,7 @@
 }
 
 .img-bgA1{
+  z-index: -1;
   position: absolute;
   right: 50%;
   top: -25px;
@@ -50,12 +57,14 @@
   transform: rotate(45deg);
 }
 .img-bgB1{
+  z-index: -1;
   position: absolute;
   right: -25px;
   opacity: 0.5;
   transform: rotate(45deg);
 }
 .img-bgC1{
+  z-index: -1;
   position: absolute;
   opacity: 0.5;
   top: -25px;
@@ -63,6 +72,7 @@
   transform: rotate(140deg);
 }
 .img-bgD1{
+  z-index: -1;
   position: absolute;
   opacity: 0.5;
   top: -60px;
@@ -70,6 +80,7 @@
   transform: rotate(140deg);
 }
 .img-bgE1{
+  z-index: -1;
   position: absolute;
   opacity: 0.2;
   top: 220px;
@@ -77,6 +88,7 @@
   transform: rotate(140deg);
 }
 .img-bgF1{
+  z-index: -1;
   position: absolute;
   opacity: 0.2;
   top: 444px;

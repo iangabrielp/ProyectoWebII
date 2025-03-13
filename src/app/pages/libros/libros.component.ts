@@ -13,13 +13,25 @@ import { LibrosService } from '../../services/libros.service';
 export class LibrosComponent {
   constructor(private servicio: LibrosService){}
 
-  libros: any[] = [];
+  id:any;
+  nombre:any;
+  autor:any;
+  stock:any;
+  img:any;
+  libros:any;
 
   ngOnInit(){
     this.servicio.getLibros().subscribe(libro=>{
       this.libros=libro;
-    });
+      this.libros=Object.values(this.libros);
+    })
   }
+
+  // ngOnInit(){
+  //   this.servicio.getLibros().subscribe(libro=>{
+  //     this.libros=libro;
+  //   });
+  // }
 
   eliminar(id:any){
     this.servicio.deleteLibro(id).subscribe(()=>{

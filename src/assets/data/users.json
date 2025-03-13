@@ -13,6 +13,13 @@
       "nombre": "Karen Gavilanes",
       "tipoUsuario": "autor",
       "id": 2
+    },
+    {
+      "email": "jose1234@gmail.com",
+      "password": "$2a$10$tIU41GXmGAlI2k/p1CpOQOJdEMU1USjzF5YqF/ou3jvHU7c928WFu",
+      "nombre": "José Castillos",
+      "tipoUsuario": "administrador",
+      "id": 3
     }
   ]
 }
