@@ -9,16 +9,16 @@ export class LibrosService {
 
   constructor(private http: HttpClient) { }
 
-  private API_LIBROS = 'https://app-fire-242a8-default-rtdb.firebaseio.com/libros.json';
+  private API_LIBROS = 'http://localhost:8080';
 
   //Guardar Libro
   postLibros(libro:any):Observable<any>{
-    return this.http.post(this.API_LIBROS, libro)
+    return this.http.post(`${this.API_LIBROS}/guardarLibro`, libro)
   }
 
   //Mostrar libro
   getLibros():Observable<any>{
-    return this.http.get(this.API_LIBROS)
+    return this.http.get(`${this.API_LIBROS}/libros`)
   }
 
   //Mostrar libro por id
@@ -28,7 +28,7 @@ export class LibrosService {
   
   //Eliminar libro
   deleteLibro(id:any):Observable<any>{
-    return this.http.delete(`${this.API_LIBROS}/${id}`)
+    return this.http.delete(`${this.API_LIBROS}/eliminarLibro/${id}`)
   }
 
   //Actualizar libro
