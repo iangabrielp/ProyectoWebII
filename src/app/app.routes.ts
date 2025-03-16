@@ -15,6 +15,7 @@ import { usuarioAuthGuard } from './guards/usuario-auth.guard';
 import { CatalogoComponent } from './pages/catalogo/catalogo.component';
 import { CarritoUsuarioComponent } from './pages/carrito-usuario/carrito-usuario.component';
 import { FormularioAutorComponent } from './components/formulario-autor/formulario-autor.component';
+import { FormularioPrestamoComponent } from './components/formulario-prestamo/formulario-prestamo.component';
 
 export const routes: Routes = [
     {
@@ -52,6 +53,10 @@ export const routes: Routes = [
     {
         path:'formularioautor',
         component:FormularioAutorComponent
+    },
+    {
+        path:'formularioprestamo',
+        component:FormularioPrestamoComponent
     },
     {
         path:'libros/:idLibro',
