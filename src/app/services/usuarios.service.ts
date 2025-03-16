@@ -9,11 +9,11 @@ export class UsuariosService {
 
   constructor(private http: HttpClient) { }
 
-  private API_USUARIOS='http://localhost:3000/users'
+  private API_USUARIOS='http://localhost:8080'
 
   //Mostrar Usuario
   getUsuario():Observable<any>{
-    return this.http.get(this.API_USUARIOS)
+    return this.http.get(`${this.API_USUARIOS}/bibliotecarios`)
   }
 
   //Mostrar Usuario por id
@@ -24,7 +24,7 @@ export class UsuariosService {
 
   //Guardar Usuario
   postUsuarios(usuario:any):Observable <any>{
-    return this.http.post(this.API_USUARIOS, usuario)
+    return this.http.post(`${this.API_USUARIOS}/guardarBibliotecario`, usuario)
   }
 
   //Actualizar Usuario

@@ -11,15 +11,18 @@ import { RegisterService } from '../../services/register.service';
   styleUrl: './formulario-usuario.component.css'
 })
 export class FormularioUsuarioComponent {
-  constructor (private servicio: RegisterService){}
+  constructor (private servicio: UsuariosService){}
 
-  nombre:any;
-  email:any;
-  password:any;
-  tipoUsuario:any;
+  usuario:any={
+    nombre:'',
+    username:'',
+    password:'',
+    rol:''
+  }
+  
 
   guardar(formulario:any){
-    this.servicio.postRegistro(formulario.value).subscribe(()=>{
+    this.servicio.postUsuarios(formulario.value).subscribe(()=>{
       window.location.reload()
     });
   }

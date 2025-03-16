@@ -9,28 +9,27 @@
         <!-- Nombre Completo -->
         <div>
           <label for="nombre" class="block text-sm font-medium text-gray-700 txt-form">Nombre Completo</label>
-          <input type="text"  id="nombre" name="nombre" [(ngModel)]="nombre" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring focus:ring-blue-400" placeholder="Ej: Juan Pérez">
+          <input type="text"  id="nombre" name="nombre" [(ngModel)]="usuario.nombre" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring focus:ring-blue-400" placeholder="Ej: Juan Pérez">
         </div>
 
         <!-- Correo Electrónico -->
         <div>
-          <label for="email" class="block text-sm font-medium text-gray-700 txt-form">Correo Electrónico</label>
-          <input type="email"  id="email" name="email" [(ngModel)]="email" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring focus:ring-blue-400" placeholder="Ej: usuario@biblioteca.com">
+          <label for="username" class="block text-sm font-medium text-gray-700 txt-form">Correo Electrónico</label>
+          <input type="text"  id="username" name="username" [(ngModel)]="usuario.username" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring focus:ring-blue-400" placeholder="Ej: usuario@biblioteca.com">
         </div>
 
         <!-- Contraseña -->
         <div>
           <label for="password" class="block text-sm font-medium text-gray-700 txt-form">Contraseña</label>
-          <input type="password" id="password" name="password" [(ngModel)]="password" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring focus:ring-blue-400" placeholder="••••••••">
+          <input type="password" id="password" name="password" [(ngModel)]="usuario.password" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring focus:ring-blue-400" placeholder="••••••••">
         </div>
         
         <!-- Tipo de Usuario -->
         <div>
-          <label for="tipoUsuario" class="block text-sm font-medium text-gray-700 txt-form">Tipo de Usuario</label>
-          <select type="tipoUsuario" id="tipoUsuario" name="tipoUsuario" [(ngModel)]="tipoUsuario" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring focus:ring-blue-400">
-            <option value="lector">Lector</option>
-            <option value="autor">Autor</option>
-            <option value="administrador">Administrador</option>
+          <label for="rol" class="block text-sm font-medium text-gray-700 txt-form">Tipo de Usuario</label>
+          <select type="rol" id="rol" name="rol" [(ngModel)]="usuario.rol" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring focus:ring-blue-400">
+            <option value="ADMIN">Admin</option>
+            <option value="CLIENTE">Normal</option>
           </select>
         </div>
 
