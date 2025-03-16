@@ -1,0 +1,84 @@
+
+<!--FORMULARIO-->
+<br>
+<br>
+<div class="formulario flex justify-center items-center min-h-screen ">
+  <div class="w-full max-w-md bg-white rounded-lg shadow-lg p-6">
+    <h2 class="text-3xl font-bold text-center text-blue-700">Registro de libros</h2>
+    <p class="text-center text-gray-600 mb-4">Accede a miles de libros digitales</p>
+    
+    <form (ngSubmit)="guardar(formulario)" #formulario="ngForm" class="space-y-4">
+
+        <!-- Usuario -->
+
+        <div class="mb-5">
+            <label for="usuaro" class="block mb-2 text-sm font-medium text-black">Seleccione un Usuario</label>
+            
+              <select id="usuario" [(ngModel)]="prestamo.usuario" name="usuario">
+                <option value="" disabled selected class="text-black">Usuario</option>
+                @for(bibliotecario of bibliotecarios; track $index){
+                  <option [ngValue]="bibliotecario">{{bibliotecario.nombre}} </option>
+                }
+              </select>
+          </div>
+
+      <!-- Libro -->
+      <div class="mb-5">
+        <label for="libro" class="block mb-2 text-sm font-medium text-black">Seleccione un Libro</label>
+        
+          <select id="libro" [(ngModel)]="prestamo.libro" name="libro">
+            <option value="" disabled selected class="text-black">Libro</option>
+            @for(libro of libros; track $index){
+              <option [ngValue]="libro">{{libro.titulo}}</option>
+            }
+          </select>
+      </div>
+
+      <!-- Descripcion -->
+      <div>
+        <label for="descripcion" class="block text-sm font-medium text-gray-700">Descripción</label>
+        <input type="text"  id="descripcion" name="descripcion" [(ngModel)]="prestamo.descripcion" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring focus:ring-blue-400" placeholder="Ej: La Única en la Tierra">
+      </div>
+
+      
+
+      <!-- Fecha de Prestamo -->
+      <div>
+        <label for="fechaPrestamo" class="block text-sm font-medium text-gray-700">Fecha de Prestamo</label>
+        <input type="date" id="fechaPrestamo" name="fechaPrestamo" [(ngModel)]="prestamo.fechaPrestamo" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring focus:ring-blue-400" placeholder="0">
+      </div>
+
+      <!-- Fecha de Devolucion -->
+      <div>
+        <label for="fechaDevolucion" class="block text-sm font-medium text-gray-700">Fecha de Devolución</label>
+        <input type="date" id="fechaDevolucion" name="fechaDevolucion" [(ngModel)]="prestamo.fechaDevolucion" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring focus:ring-blue-400" placeholder="0">
+      </div>
+      
+
+      
+      
+      <!-- Botón de Registro -->
+      <button type="submit" class="w-full py-2 text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition">
+        Registrar Prestamo
+      </button>
+    </form>
+  </div>
+</div>
+
+
+
+
+<img width="120" height="120" class="img-bgA" src="https://img.icons8.com/?size=100&id=Pa7h0WwjTpPz&format=png&color=000000" style="filter: invert(1);">
+<img width="220" height="220" class="img-bgB" src="https://img.icons8.com/?size=100&id=20472&format=png&color=000000" style="filter: invert(1);">
+<img width="220" height="220" class="img-bgC" src="https://img.icons8.com/?size=100&id=118834&format=png&color=000000" style="filter: invert(1);">
+<img width="220" height="220" class="img-bgD" src="https://img.icons8.com/?size=100&id=118834&format=png&color=000000" style="filter: invert(1);">
+<img width="100" height="100" class="img-bgE" src="https://img.icons8.com/?size=100&id=20472&format=png&color=000000" style="filter: invert(1);">
+<img width="120" height="120" class="img-bgF" src="https://img.icons8.com/?size=100&id=Pa7h0WwjTpPz&format=png&color=000000" style="filter: invert(1);">
+
+
+<img width="120" height="120" class="img-bgA1" src="https://img.icons8.com/?size=100&id=Pa7h0WwjTpPz&format=png&color=000000" style="filter: invert(1);">
+<img width="220" height="220" class="img-bgB1" src="https://img.icons8.com/?size=100&id=20472&format=png&color=000000" style="filter: invert(1);">
+<img width="220" height="220" class="img-bgC1" src="https://img.icons8.com/?size=100&id=118834&format=png&color=000000" style="filter: invert(1);">
+<img width="220" height="220" class="img-bgD1" src="https://img.icons8.com/?size=100&id=118834&format=png&color=000000" style="filter: invert(1);">
+<img width="100" height="100" class="img-bgE1" src="https://img.icons8.com/?size=100&id=20472&format=png&color=000000" style="filter: invert(1);">
+<img width="120" height="120" class="img-bgF1" src="https://img.icons8.com/?size=100&id=Pa7h0WwjTpPz&format=png&color=000000" style="filter: invert(1);">

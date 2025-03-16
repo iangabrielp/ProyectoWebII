@@ -18,7 +18,8 @@ export class FormularioLibrosComponent {
     genero:'',
     fechapublicacion:'',
     img:'',
-    autor:null
+    autor:null,
+    
   }
   autores:any[]=[]
 
