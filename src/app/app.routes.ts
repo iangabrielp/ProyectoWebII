@@ -13,7 +13,6 @@ import { adminAuthGuard } from './guards/admin-auth.guard';
 import { authGuard } from './guards/auth.guard';
 import { usuarioAuthGuard } from './guards/usuario-auth.guard';
 import { CatalogoComponent } from './pages/catalogo/catalogo.component';
-import { CarritoUsuarioComponent } from './pages/carrito-usuario/carrito-usuario.component';
 import { FormularioAutorComponent } from './components/formulario-autor/formulario-autor.component';
 import { FormularioPrestamoComponent } from './components/formulario-prestamo/formulario-prestamo.component';
 
@@ -65,10 +64,6 @@ export const routes: Routes = [
     {
         path:'catalogo',
         component:CatalogoComponent
-    },
-    {
-        path:'carrito',
-        component:CarritoUsuarioComponent
     },
     {
         path:'',

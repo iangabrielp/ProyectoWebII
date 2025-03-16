@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { LibrosService } from '../../services/libros.service';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { CarritoUsuarioComponent } from '../carrito-usuario/carrito-usuario.component';
 
 @Component({
   selector: 'app-catalogo',

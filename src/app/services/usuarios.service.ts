@@ -12,8 +12,8 @@ export class UsuariosService {
   private API_USUARIOS='http://localhost:8080'
 
   //Mostrar Usuario
-  getUsuario():Observable<any>{
-    return this.http.get(`${this.API_USUARIOS}/bibliotecarios`)
+  getUsuario():Observable<any[]>{
+    return this.http.get<any[]>(`${this.API_USUARIOS}/bibliotecarios`)
   }
 
   //Mostrar Usuario por id

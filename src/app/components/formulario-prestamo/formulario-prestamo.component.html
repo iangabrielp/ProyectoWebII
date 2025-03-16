@@ -12,9 +12,9 @@
         <!-- Usuario -->
 
         <div class="mb-5">
-            <label for="usuaro" class="block mb-2 text-sm font-medium text-black">Seleccione un Usuario</label>
+            <label for="bibliotecario" class="block mb-2 text-sm font-medium text-black">Seleccione un Usuario</label>
             
-              <select id="usuario" [(ngModel)]="prestamo.usuario" name="usuario">
+              <select id="bibliotecario" [(ngModel)]="prestamo.bibliotecario" name="bibliotecario">
                 <option value="" disabled selected class="text-black">Usuario</option>
                 @for(bibliotecario of bibliotecarios; track $index){
                   <option [ngValue]="bibliotecario">{{bibliotecario.nombre}} </option>
