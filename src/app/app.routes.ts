@@ -14,6 +14,7 @@ import { authGuard } from './guards/auth.guard';
 import { usuarioAuthGuard } from './guards/usuario-auth.guard';
 import { CatalogoComponent } from './pages/catalogo/catalogo.component';
 import { CarritoUsuarioComponent } from './pages/carrito-usuario/carrito-usuario.component';
+import { FormularioAutorComponent } from './components/formulario-autor/formulario-autor.component';
 
 export const routes: Routes = [
     {
@@ -47,6 +48,10 @@ export const routes: Routes = [
     {
         path:'formulariolibros',
         component:FormularioLibrosComponent, canActivate:[adminAuthGuard, authGuard]
+    },
+    {
+        path:'formularioautor',
+        component:FormularioAutorComponent
     },
     {
         path:'libros/:idLibro',
