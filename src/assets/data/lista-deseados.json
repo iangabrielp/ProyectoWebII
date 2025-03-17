@@ -1,16 +1,16 @@
 {
   "lista": [
     {
-      "id": 8,
-      "titulo": "Tengo derecho a destruirme",
-      "genero": "Comedia",
-      "img": "https://images.cdn1.buscalibre.com/fit-in/360x360/6e/82/6e82eb23ef662a6966b7143d90bc5081.jpg",
+      "id": 5,
+      "titulo": "La casa de los espíritus",
+      "genero": "Horror",
+      "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBIdu-XSzpB2CEPY3SPyhoY2c02SYP9bSJOAQ5MX2O2X_SSCZpMEURXFEjPzSt4qJfICwhEaZWikehyaVscFj4wol-c2UgoqDtBC_AdHrh2TH0k7T2QZ2lYXGSHQeRmfpzOYNAqCFkcw/s1600/La+casa+de+los+esp%25C3%25ADritus.jpg",
       "fechapublicacion": "2025-01-28T00:00:00.000+00:00",
       "autor": {
-        "id": 6,
-        "ci": "0214563456",
-        "nombre": "Kim",
-        "apellido": "Young"
+        "id": 3,
+        "ci": "0000000000",
+        "nombre": "Isabel",
+        "apellido": "Allende"
       }
     }
   ]
