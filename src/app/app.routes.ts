@@ -16,6 +16,7 @@ import { CatalogoComponent } from './pages/catalogo/catalogo.component';
 import { FormularioAutorComponent } from './components/formulario-autor/formulario-autor.component';
 import { FormularioPrestamoComponent } from './components/formulario-prestamo/formulario-prestamo.component';
 import { PanelUsuarioComponent } from './pages/panel-usuario/panel-usuario.component';
+import { ListaDeseadosComponent } from './pages/lista-deseados/lista-deseados.component';
 
 export const routes: Routes = [
     {
@@ -53,6 +54,10 @@ export const routes: Routes = [
     {
         path:'formulariolibros',
         component:FormularioLibrosComponent, canActivate:[adminAuthGuard, authGuard]
+    },
+    {
+        path:'listaDeseados',
+        component:ListaDeseadosComponent, canActivate:[authGuard, usuarioAuthGuard]
     },
     {
         path:'formularioautor',

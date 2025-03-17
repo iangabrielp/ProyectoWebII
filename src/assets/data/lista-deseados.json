@@ -1,0 +1,17 @@
+{
+  "lista": [
+    {
+      "id": 8,
+      "titulo": "Tengo derecho a destruirme",
+      "genero": "Comedia",
+      "img": "https://images.cdn1.buscalibre.com/fit-in/360x360/6e/82/6e82eb23ef662a6966b7143d90bc5081.jpg",
+      "fechapublicacion": "2025-01-28T00:00:00.000+00:00",
+      "autor": {
+        "id": 6,
+        "ci": "0214563456",
+        "nombre": "Kim",
+        "apellido": "Young"
+      }
+    }
+  ]
+}

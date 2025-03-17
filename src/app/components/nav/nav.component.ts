@@ -27,4 +27,8 @@ export class NavComponent {
     }
     return false;
   }
+  login(){ 
+    localStorage.setItem("usuario", "true")
+    localStorage.setItem("login", "true")
+  }
 }

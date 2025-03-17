@@ -21,6 +21,10 @@ login(){
   localStorage.setItem("usuario", "true")
   localStorage.setItem("login", "true")
 }
+loginAdmin(){ 
+  localStorage.setItem("admin", "true")
+  localStorage.setItem("login", "true")
+}
 logout(){
   localStorage.setItem("usuario", "false")
   localStorage.setItem("login", "false")

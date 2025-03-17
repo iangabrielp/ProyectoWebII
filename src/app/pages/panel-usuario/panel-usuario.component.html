@@ -1,6 +1,7 @@
 <img src="https://superultrawidewallpaper.com/wp-content/uploads/2021/01/grand-library-3840x1080.jpg" alt="image description" class="w-full img-bg">
 <br>
 <br>
+<div class="panel-usuario">
 @if(usuarioAuth()){
 <div class="panel-usuario">
   <p class="text-main">Panel Usuario</p>
@@ -19,7 +20,7 @@
       <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Lista de deseados</h5>
       <p class="mb-3 font-normal text-white">Conoce más sobre nosotros y conoce mucho más sobre lo que nos dedicamos, en
         resumen, creemos mucho en tu entretenimiento a largo plazo</p>
-      <a href="http://localhost:4200/libros" class="btn-tarjetas">
+      <a href="http://localhost:4200/listaDeseados" class="btn-tarjetas">
         <p>Dirigir</p>
       </a>
     </div>
@@ -69,3 +70,10 @@
   </div>
 </div>
 }
+
+<div>
+  <a href="http://localhost:4200/home" (click)="logOut()" class="btn-tarjetas-2">
+    <p>Cerrar Sesión</p>
+  </a>
+</div>
+</div>

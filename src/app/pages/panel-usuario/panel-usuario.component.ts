@@ -21,4 +21,9 @@ export class PanelUsuarioComponent {
     }
     return false;
   }
+  logOut(){
+    localStorage.setItem("usuario", "false")
+  localStorage.setItem("login", "false")
+  localStorage.setItem("admin", "false")
+  }
 }
