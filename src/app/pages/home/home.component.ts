@@ -16,5 +16,15 @@ export class HomeComponent {
     { src: 'assets/img/library2.jpeg', alt: 'Biblioteca con libros antiguos' },
     { src: 'assets/img/library3.jpg', alt: 'Zona de lectura acogedora' }
   ];
+
+login(){ 
+  localStorage.setItem("usuario", "true")
+  localStorage.setItem("login", "true")
+}
+logout(){
+  localStorage.setItem("usuario", "false")
+  localStorage.setItem("login", "false")
+  localStorage.setItem("admin", "false")
+}
 }
 

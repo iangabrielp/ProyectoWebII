@@ -1,0 +1,71 @@
+<img src="https://superultrawidewallpaper.com/wp-content/uploads/2021/01/grand-library-3840x1080.jpg" alt="image description" class="w-full img-bg">
+<br>
+<br>
+@if(usuarioAuth()){
+<div class="panel-usuario">
+  <p class="text-main">Panel Usuario</p>
+  <div class="tarjetas flex space-x-4">
+    <div class="custom-gradient max-w-sm p-6 rounded-lg shadow-sm">
+      <img src="https://estepais.com/wp-content/uploads/2024/04/Proyecto-nuevo-15.png" alt="image description" style="aspect-ratio: 1/1;" class="object-cover w-full img-tarjeta">
+      <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Catálogo</h5>
+      <p class="mb-3 font-normal text-white">Registrate en nuestra página web y enterate de todas las novedades que
+        llegarán próximamente!</p>
+      <a href="http://localhost:4200/catalogo" class="btn-tarjetas">
+        <p>Dirigir</p>
+      </a>
+    </div>
+    <div class="custom-gradient max-w-sm p-6 rounded-lg shadow-sm">
+      <img src="https://www.usfq.edu.ec/sites/default/files/styles/min_mobile/public/2023-11/slide-usfq-biblioteca-002.jpg?itok=f-ZnUOiJ" alt="image description" style="aspect-ratio: 1/1;" class="object-cover w-full img-tarjeta">
+      <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Lista de deseados</h5>
+      <p class="mb-3 font-normal text-white">Conoce más sobre nosotros y conoce mucho más sobre lo que nos dedicamos, en
+        resumen, creemos mucho en tu entretenimiento a largo plazo</p>
+      <a href="http://localhost:4200/libros" class="btn-tarjetas">
+        <p>Dirigir</p>
+      </a>
+    </div>
+    <div class="custom-gradient max-w-sm p-6 rounded-lg shadow-sm">
+      <img src="https://plus.unsplash.com/premium_photo-1664474858290-12e86f613944?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZG9zJTIwcGVyc29uYXMlMjBoYWJsYW5kb3xlbnwwfHwwfHx8MA%3D%3D" alt="image description" style="aspect-ratio: 1/1;" class="object-cover w-full img-tarjeta">
+      <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Contactos</h5>
+      <p class="mb-3 font-normal text-white">Para poder acceder a todo nuestro catálogo de libros inicia sesión para que
+        tengas acceso a más funciones!</p>
+      <a href="http://localhost:4200/contactos" class="btn-tarjetas">
+        <p>Dirigir</p>
+      </a>
+    </div>
+  </div>
+</div>
+}
+@if(adminAuth()){
+<div class="panel-usuario">
+  <p class="text-main">Panel Administrador</p>
+  <div class="tarjetas flex space-x-4">
+    <div class="custom-gradient max-w-sm p-6 rounded-lg shadow-sm">
+      <img src="https://images.unsplash.com/photo-1661860833530-461a28f38204?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image description" style="aspect-ratio: 1/1;" class="object-cover w-full img-tarjeta">
+      <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Registrar Autor</h5>
+      <p class="mb-3 font-normal text-white">Registrate en nuestra página web y enterate de todas las novedades que
+        llegarán próximamente!</p>
+      <a href="http://localhost:4200/formularioautor" class="btn-tarjetas">
+        <p>Dirigir</p>
+      </a>
+    </div>
+    <div class="custom-gradient max-w-sm p-6 rounded-lg shadow-sm">
+      <img src="https://images.pexels.com/photos/3060324/pexels-photo-3060324.jpeg" alt="image description" style="aspect-ratio: 1/1;" class="object-cover w-full img-tarjeta">
+      <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Gestión de Libros</h5>
+      <p class="mb-3 font-normal text-white">Conoce más sobre nosotros y conoce mucho más sobre lo que nos dedicamos, en
+        resumen, creemos mucho en tu entretenimiento a largo plazo</p>
+      <a href="http://localhost:4200/libros" class="btn-tarjetas">
+        <p>Dirigir</p>
+      </a>
+    </div>
+    <div class="custom-gradient max-w-sm p-6 rounded-lg shadow-sm">
+      <img src="https://www.comunidadbaratz.com/wp-content/uploads/Hay-muchisimos-libros-en-las-bibliotecas-pero-solamente-unos-pocos-comparten-el-privilegio-de-ser-los-mas-prestados-1.jpg" alt="image description" style="aspect-ratio: 1/1;" class="object-cover w-full img-tarjeta">
+      <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Gestión de Prestamos</h5>
+      <p class="mb-3 font-normal text-white">Para poder acceder a todo nuestro catálogo de libros inicia sesión para que
+        tengas acceso a más funciones!</p>
+      <a href="http://localhost:4200/formularioprestamo" class="btn-tarjetas">
+        <p>Dirigir</p>
+      </a>
+    </div>
+  </div>
+</div>
+}

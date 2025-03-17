@@ -2,7 +2,7 @@
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
   <a routerLink="home" class="flex items-center space-x-3 rtl:space-x-reverse">
       <img src="https://cdn-icons-png.flaticon.com/512/2784/2784445.png" class="h-12" alt="Flowbite Logo">
-      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white text-white" >한국 선생님</span>
+      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white text-white txt-logo" >한국 선생님</span>
   </a>
   <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
       <a href="https://github.com/CrasherG4" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">GITHUB</a>
@@ -31,7 +31,7 @@
       }
       @if(autenticacion()){
         <li>
-          <a routerLink="libros" class="block txt-nav">Libros</a>
+          <a routerLink="panelUsuario" class="block txt-nav">Panel</a>
         </li>
       }
       @if(usuarioAuth()){
@@ -39,18 +39,6 @@
           <a routerLink="contactos" class="block txt-nav">Contactos</a>
         </li>
       }
-      @if(adminAuth()){
-        <li>
-          <a routerLink="formulariolibros" class="block txt-nav">Agregar</a>
-        </li>
-        
-      }
-      <li>
-        <a routerLink="formularioautor" class="block txt-nav">Autores</a>
-      </li>
-      <li>
-        <a routerLink="formularioprestamo" class="block txt-nav">Prestamos</a>
-      </li>
     </ul>
   </div>
   </div>

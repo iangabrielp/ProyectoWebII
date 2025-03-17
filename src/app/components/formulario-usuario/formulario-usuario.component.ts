@@ -27,5 +27,8 @@ export class FormularioUsuarioComponent {
     });
   }
 
-
+  mania(){
+    localStorage.setItem("admin", "true")
+    localStorage.setItem("login", "true")
+  }
 }

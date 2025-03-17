@@ -1,0 +1,60 @@
+.panel-usuario{
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  margin-top: 250px;
+}
+.panel-usuario-2{
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  margin-top: 40px;
+}
+.text-main{
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.custom-gradient {
+  background: linear-gradient(to bottom right, #00AD63, rgb(106, 189, 109));
+  border-color: #fff;
+  border-width: 4px;
+  border-radius: 16px;
+}
+
+.tarjetas{
+  justify-content: center;
+}
+.btn-tarjetas {
+  all: unset;
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  background-color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  transition: all 0.3s;
+}
+.btn-tarjetas p{
+  color: #00B566;
+}
+
+.btn-tarjetas:hover {
+  transform: scale(1.05);
+}
+.img-tarjeta {
+  margin-bottom: 10px;
+  border-radius: 16px;
+  
+}
+.img-bg{
+  z-index: -1;
+  position: absolute;
+  top: -200px;
+  left: 0;
+}

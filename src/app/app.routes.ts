@@ -15,6 +15,7 @@ import { usuarioAuthGuard } from './guards/usuario-auth.guard';
 import { CatalogoComponent } from './pages/catalogo/catalogo.component';
 import { FormularioAutorComponent } from './components/formulario-autor/formulario-autor.component';
 import { FormularioPrestamoComponent } from './components/formulario-prestamo/formulario-prestamo.component';
+import { PanelUsuarioComponent } from './pages/panel-usuario/panel-usuario.component';
 
 export const routes: Routes = [
     {
@@ -44,6 +45,10 @@ export const routes: Routes = [
     {
         path:'libros',
         component:LibrosComponent, canActivate:[authGuard]
+    },
+    {
+        path:'panelUsuario',
+        component:PanelUsuarioComponent, canActivate:[authGuard]
     },
     {
         path:'formulariolibros',
