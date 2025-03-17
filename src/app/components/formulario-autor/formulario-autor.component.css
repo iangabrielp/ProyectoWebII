@@ -1,6 +1,29 @@
+.box-form-design{
+  display: flex;
+  padding-left: 10%;
+  padding-right: 10%;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+}
+.borde-cualquiera {
+  border-radius: 24px; /* Redondeo de las esquinas */
+  padding: 20px; /* Espacio interno (opcional) */
+  border-color: #01B667;
+  border-width: 5px;
+}
+
+.img-form{
+  height: 600px;
+  width: 600px;
+  justify-self: center;
+  align-self: center;
+}
 .formulario{
   padding: 5%;
+  width: 600px;
 }
+
 .txt-main {
   all: unset;
   color: #01B667;
