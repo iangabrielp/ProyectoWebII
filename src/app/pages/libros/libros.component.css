@@ -129,3 +129,30 @@
   transition: transform 0.2s ease;
   transition: all 0.3s;
 }
+.cont-btn-pdf{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+}
+.btn-tarjetas-2 {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  background-color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, all 0.3s;
+  margin-top: 40px;
+}
+
+.btn-tarjetas-2 p {
+  color: #00B566;
+}
+
+.btn-tarjetas-2:hover {
+  transform: scale(1.05);
+}
