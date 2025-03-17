@@ -1,13 +1,16 @@
 .formulario{
   padding: 5%;
 }
-.txt-main{
+.txt-main {
   all: unset;
   color: #01B667;
   font-weight: 600;
   font-size: 30px;
-  text-align: center;
+  text-align: center; /* Esto asegura que el texto esté centrado */
+  display: block; /* Hace que el texto se comporte como un bloque */
+  margin: 0 auto; /* Asegura que el texto esté centrado en su contenedor */
 }
+
 .txt-form{
   all: unset;
   color: #01B667;
@@ -16,6 +19,7 @@
 }
 
 .img-bgA{
+  z-index: -1;  
   position: absolute;
   left: 50%;
   top: -25px;
@@ -23,12 +27,14 @@
   transform: rotate(45deg);
 }
 .img-bgB{
+  z-index: -1;  
   position: absolute;
   left: -25px;
   opacity: 0.5;
   transform: rotate(45deg);
 }
 .img-bgC{
+  z-index: -1;  
   position: absolute;
   opacity: 0.5;
   top: -25px;
@@ -36,6 +42,7 @@
   transform: rotate(140deg);
 }
 .img-bgD{
+  z-index: -1;  
   position: absolute;
   opacity: 0.5;
   top: -60px;
@@ -43,6 +50,7 @@
   transform: rotate(140deg);
 }
 .img-bgE{
+  z-index: -1;  
   position: absolute;
   opacity: 0.2;
   top: 220px;
@@ -50,6 +58,7 @@
   transform: rotate(140deg);
 }
 .img-bgF{
+  z-index: -1;  
   position: absolute;
   opacity: 0.2;
   top: 444px;
@@ -58,6 +67,7 @@
 }
 
 .img-bgA1{
+  z-index: -1;  
   position: absolute;
   right: 50%;
   top: -25px;
@@ -65,12 +75,14 @@
   transform: rotate(45deg);
 }
 .img-bgB1{
+  z-index: -1;  
   position: absolute;
   right: -25px;
   opacity: 0.5;
   transform: rotate(45deg);
 }
 .img-bgC1{
+  z-index: -1;  
   position: absolute;
   opacity: 0.5;
   top: -25px;
@@ -78,6 +90,7 @@
   transform: rotate(140deg);
 }
 .img-bgD1{
+  z-index: -1;  
   position: absolute;
   opacity: 0.5;
   top: -60px;
@@ -85,6 +98,7 @@
   transform: rotate(140deg);
 }
 .img-bgE1{
+  z-index: -1;  
   position: absolute;
   opacity: 0.2;
   top: 220px;
@@ -92,15 +106,18 @@
   transform: rotate(140deg);
 }
 .img-bgF1{
+  z-index: -1;  
   position: absolute;
   opacity: 0.2;
   top: 444px;
   right: 444px;
   transform: rotate(140deg);
 }
-.btn-submit{
+.btn-submit {
   all: unset;
-  display: inline-block;
+  display: block; /* Cambiado de inline-block a block para que ocupe todo el ancho disponible */
+  width: max-content; /* Hace que el ancho sea ajustable al contenido del botón */
+  margin: 20px auto; /* Centra el botón y le da margen superior e inferior */
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
