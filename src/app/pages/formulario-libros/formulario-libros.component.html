@@ -37,7 +37,7 @@
       <div class="mb-5">
         <label for="autor" class="block text-sm font-medium text-gray-700 txt-form">Autor</label>
         
-          <select id="autor" [(ngModel)]="libro.autor" name="autor">
+          <select id="autor" [(ngModel)]="libro.autor" name="autor" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring focus:ring-blue-400">
             <option value="" disabled selected class="text-black">Seleccione un autor</option>
             @for(autor of autores; track $index){
               <option [ngValue]="autor">{{autor.nombre}} {{autor.apellido}}</option>
