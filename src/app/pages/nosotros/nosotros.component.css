@@ -16,11 +16,14 @@
 .nosotros{
   padding-left: 5%;
   padding-right: 5%;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
 }
 .carrousel-nosotros{
-  padding-left: 1%;
-  padding-right: 10%;
-  margin: 5%;
+  padding-right: 12%;
+  margin-top: 20px;
+  margin: 2%;
   justify-content: center;
   justify-items: center;
   margin-left: 15%;
@@ -36,7 +39,7 @@
   align-content: center;
   padding-left: 10%;
   padding-right: 10%;
-  margin-bottom: 10%;
+  margin-bottom: 20px;
 }
 .txt-nosotros-main h2{
   color: #fff;
