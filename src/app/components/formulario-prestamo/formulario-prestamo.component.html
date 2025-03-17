@@ -2,19 +2,20 @@
 <!--FORMULARIO-->
 <br>
 <br>
-<div class="formulario flex justify-center items-center min-h-screen ">
+<div class="flex justify-center items-center min-h-screen formulario">
   <div class="w-full max-w-md bg-white rounded-lg shadow-lg p-6">
-    <h2 class="text-3xl font-bold text-center text-blue-700">Registro de libros</h2>
-    <p class="text-center text-gray-600 mb-4">Accede a miles de libros digitales</p>
+    <p class="txt-main mb-4">Registro de Prestamo</p>
+    <p class="text-center text-gray-600 ">Accede a miles de libros digitales</p>
     
     <form (ngSubmit)="guardar(formulario)" #formulario="ngForm" class="space-y-4">
 
         <!-- Usuario -->
 
-        <div class="mb-5">
-            <label for="bibliotecario" class="block mb-2 text-sm font-medium text-black">Seleccione un Usuario</label>
+        <div>
+            <label for="bibliotecario" class="block text-sm font-medium text-gray-700 txt-form">Seleccione un Usuario</label>
+            <br>
             
-              <select id="bibliotecario" [(ngModel)]="prestamo.bibliotecario" name="bibliotecario">
+              <select id="bibliotecario" [(ngModel)]="prestamo.bibliotecario" name="bibliotecario" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring focus:ring-blue-400">
                 <option value="" disabled selected class="text-black">Usuario</option>
                 @for(bibliotecario of bibliotecarios; track $index){
                   <option [ngValue]="bibliotecario">{{bibliotecario.nombre}} </option>
@@ -23,10 +24,10 @@
           </div>
 
       <!-- Libro -->
-      <div class="mb-5">
-        <label for="libro" class="block mb-2 text-sm font-medium text-black">Seleccione un Libro</label>
-        
-          <select id="libro" [(ngModel)]="prestamo.libro" name="libro">
+      <div>
+        <label for="libro" class="block text-sm font-medium text-gray-700 txt-form">Seleccione un Libro</label>
+        <br>
+          <select id="libro" [(ngModel)]="prestamo.libro" name="libro" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring focus:ring-blue-400">
             <option value="" disabled selected class="text-black">Libro</option>
             @for(libro of libros; track $index){
               <option [ngValue]="libro">{{libro.titulo}}</option>
@@ -36,7 +37,7 @@
 
       <!-- Descripcion -->
       <div>
-        <label for="descripcion" class="block text-sm font-medium text-gray-700">Descripción</label>
+        <label for="descripcion" class="block text-sm font-medium text-gray-700 txt-form">Descripción</label>
         <input type="text"  id="descripcion" name="descripcion" [(ngModel)]="prestamo.descripcion" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring focus:ring-blue-400" placeholder="Ej: La Única en la Tierra">
       </div>
 
@@ -44,13 +45,13 @@
 
       <!-- Fecha de Prestamo -->
       <div>
-        <label for="fechaPrestamo" class="block text-sm font-medium text-gray-700">Fecha de Prestamo</label>
+        <label for="fechaPrestamo" class="block text-sm font-medium text-gray-700 txt-form">Fecha de Prestamo</label>
         <input type="date" id="fechaPrestamo" name="fechaPrestamo" [(ngModel)]="prestamo.fechaPrestamo" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring focus:ring-blue-400" placeholder="0">
       </div>
 
       <!-- Fecha de Devolucion -->
       <div>
-        <label for="fechaDevolucion" class="block text-sm font-medium text-gray-700">Fecha de Devolución</label>
+        <label for="fechaDevolucion" class="block text-sm font-medium text-gray-700 txt-form">Fecha de Devolución</label>
         <input type="date" id="fechaDevolucion" name="fechaDevolucion" [(ngModel)]="prestamo.fechaDevolucion" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring focus:ring-blue-400" placeholder="0">
       </div>
       
@@ -58,7 +59,7 @@
       
       
       <!-- Botón de Registro -->
-      <button type="submit" class="w-full py-2 text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition">
+      <button type="submit" class="btn-submit">
         Registrar Prestamo
       </button>
     </form>
