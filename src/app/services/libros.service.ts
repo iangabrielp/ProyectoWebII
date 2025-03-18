@@ -20,11 +20,6 @@ export class LibrosService {
   getLibros():Observable<any>{
     return this.http.get(`${this.API_LIBROS}/libros`)
   }
-
-  //Mostrar libro por id
-  getLibroById(id:any):Observable<any>{
-    return this.http.get(`${this.API_LIBROS}/${id}`)
-  }
   
   //Eliminar libro
   deleteLibro(id:any):Observable<any>{
@@ -33,6 +28,6 @@ export class LibrosService {
 
   //Actualizar libro
   putLibro(libro:any):Observable<any>{
-    return this.http.put(`${this.API_LIBROS}/${libro.id}`, libro)
+    return this.http.put(`${this.API_LIBROS}/actualizarLibro/${libro.id}`, libro)
   }
 }
