@@ -28,7 +28,7 @@ export class CatalogoComponent {
       this.servicioLista.postLista(libro).subscribe(
         (respuesta) => {
           console.log('Libro agregado exitosamente al backend:', respuesta);
-          this.listaDeseados.push(libro); // Solo agrega a la lista local si se añadió en el backend
+          this.listaDeseados.push(libro);
         },
         (error) => {
           console.error('Error al agregar el libro al backend:', error);
