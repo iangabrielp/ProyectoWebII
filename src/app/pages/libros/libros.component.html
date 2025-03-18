@@ -1,42 +1,43 @@
 <!--FORMULARIO-->
 <br>
 <br>
+<div class="box-form-design">
 <div class="flex justify-center items-center min-h-screen formulario">
-  <div class="w-full max-w-md bg-white rounded-lg shadow-lg p-6 justify-center">
-    <p class="txt-main">Registro de libros</p>
-    <p class="text-center text-gray-600 mb-4">Accede a miles de libros digitales</p>
+  <div class="w-full max-w-md bg-white rounded-lg shadow-lg p-6 borde-cualquiera">
+    <p class="txt-main mb-4">Registro de libros</p>
+    <p class="text-center text-gray-600">Accede a miles de libros digitales</p>
     
     <form (ngSubmit)="guardar(formulario)" #formulario="ngForm" class="space-y-4">
       <!-- Nombre Libro -->
       <div>
-        <label for="titulo" class="block text-sm font-medium text-gray-700">Nombre del libro</label>
+        <label for="titulo" class="block text-sm font-medium text-gray-700 txt-form">Nombre del libro</label>
         <input type="text"  id="titulo" name="titulo" [(ngModel)]="libro.titulo" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring focus:ring-blue-400" placeholder="Ej: La Única en la Tierra">
       </div>
 
       <!-- Autor -->
       <div>
-        <label for="genero" class="block text-sm font-medium text-gray-700">Autor</label>
+        <label for="genero" class="block text-sm font-medium text-gray-700 txt-form">Autor</label>
         <input type="text"  id="genero" name="genero" [(ngModel)]="libro.genero" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring focus:ring-blue-400" placeholder="Ej: Chung Serang">
       </div>
 
       <!-- Stock -->
       <div>
-        <label for="fechapublicacion" class="block text-sm font-medium text-gray-700">Stock</label>
+        <label for="fechapublicacion" class="block text-sm font-medium text-gray-700 txt-form">Fecha de Publicación</label>
         <input type="date" id="fechapublicacion" name="fechapublicacion" [(ngModel)]="libro.fechapublicacion" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring focus:ring-blue-400" placeholder="0">
       </div>
 
       <!-- Imagen -->
       <div>
-        <label for="img" class="block text-sm font-medium text-gray-700">URL de la portada</label>
+        <label for="img" class="block text-sm font-medium text-gray-700 txt-form">URL de la portada</label>
         <input type="text" id="img" name="img" [(ngModel)]="libro.img" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring focus:ring-blue-400" placeholder="www.imagen.com">
       </div>
 
       
       <!-- Autor -->
       <div class="mb-5">
-        <label for="autor" class="block mb-2 text-sm font-medium text-black">Autor</label>
+        <label for="autor" class="block text-sm font-medium text-gray-700 txt-form">Autor</label>
         
-          <select id="autor" [(ngModel)]="libro.autor" name="autor">
+          <select id="autor" [(ngModel)]="libro.autor" name="autor" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring focus:ring-blue-400">
             <option value="" disabled selected class="text-black">Seleccione un autor</option>
             @for(autor of autores; track $index){
               <option [ngValue]="autor">{{autor.nombre}} {{autor.apellido}}</option>
@@ -45,12 +46,15 @@
       </div>
       
       <!-- Botón de Registro -->
-      <button type="submit" class="w-full py-2 text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition">
-        Registrar Libro
+      <button type="submit" class="btn-submit">
+        Actualizar Libro
       </button>
     </form>
   </div>
 </div>
+</div>
+
+
 <br>
 <p class="main-text-2" style="color: white;">Aquí puedes Eliminar/Editar Libros</p>
 
