@@ -30,4 +30,5 @@ export class LibrosService {
   putLibro(libro:any):Observable<any>{
     return this.http.put(`${this.API_LIBROS}/actualizarLibro/${libro.id}`, libro)
   }
+  
 }

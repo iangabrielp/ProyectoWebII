@@ -8,6 +8,7 @@
     <form (ngSubmit)="editar(formulario)" #formulario="ngForm" class="space-y-4">
       <!-- Id del libro -->
       <div>
+        <label for="id" class="block text-sm font-medium text-gray-700 txt-form">ID del Libro</label>
         <input type="text"  id="id" name="id" [(ngModel)]="libro.id" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring focus:ring-blue-400" placeholder="Ej: 0001">
       </div>
 
@@ -19,8 +20,8 @@
 
       <!-- Autor -->
       <div>
-        <label for="genero" class="block text-sm font-medium text-gray-700 txt-form">Autor</label>
-        <input type="text"  id="genero" name="genero" [(ngModel)]="libro.genero" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring focus:ring-blue-400" placeholder="Ej: Chung Serang">
+        <label for="genero" class="block text-sm font-medium text-gray-700 txt-form">Genero</label>
+        <input type="text"  id="genero" name="genero" [(ngModel)]="libro.genero" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring focus:ring-blue-400" placeholder="Ej: Drama o Acción">
       </div>
 
       <!-- Stock -->
@@ -54,6 +55,16 @@
       </button>
     </form>
   </div>
+  <img class="img-form" src="https://cdn3d.iconscout.com/3d/premium/thumb/edit-3d-illustration-download-in-png-blend-fbx-gltf-file-formats--write-pencil-pen-seo-pack-web-illustrations-2409811@0.png" alt="image description">
 </div>
 
+
 </div>
+<p class="txt-terminos">Entiendes y aceptas que esta plataforma recopila y utiliza datos de forma ética y conforme a su política de privacidad. Al iniciar sesión, otorgas tu consentimiento para la recopilación, procesamiento y almacenamiento de datos necesarios para brindarte un servicio óptimo, incluyendo fines de mejora continua y análisis. Es tu deber revisar periódicamente estos términos y condiciones, ya que nos reservamos el derecho de modificarlos en cualquier momento. El uso continuado de la plataforma implicará tu aceptación de las modificaciones realizadas.</p>
+
+<img width="120" height="120" class="img-bg1" src="https://img.icons8.com/?size=100&id=Pa7h0WwjTpPz&format=png&color=000000" style="filter: invert(1);">
+<img width="220" height="220" class="img-bg2" src="https://img.icons8.com/?size=100&id=20472&format=png&color=000000" style="filter: invert(1);">
+<img width="220" height="220" class="img-bg3" src="https://img.icons8.com/?size=100&id=118834&format=png&color=000000" style="filter: invert(1);">
+<img width="220" height="220" class="img-bg4" src="https://img.icons8.com/?size=100&id=118834&format=png&color=000000" style="filter: invert(1);">
+<img width="100" height="100" class="img-bg5" src="https://img.icons8.com/?size=100&id=20472&format=png&color=000000" style="filter: invert(1);">
+<img width="120" height="120" class="img-bg6" src="https://img.icons8.com/?size=100&id=Pa7h0WwjTpPz&format=png&color=000000" style="filter: invert(1);">
