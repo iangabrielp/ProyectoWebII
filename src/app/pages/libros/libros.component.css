@@ -4,19 +4,28 @@
   text-overflow: ellipsis;     
 }
 .main-text-2 {
-  margin-top: 5%;
+  margin-top: 10px;
   font-size: 30px;
   font-weight: bold;
   color: rgb(255, 255, 255); 
   margin-bottom: 10px; 
   text-align: center;
 }
-
+.box-form-design{
+  display: flex;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+}
 .productos{
   background-color: aliceblue;
 }
 .formulario{
   padding: 5%;
+  width: 800px; 
 }
 .txt-main{
   all: unset;
@@ -157,12 +166,12 @@
   transform: scale(1.05);
 }
 
-
-
-
-
-
-
+.img-form{
+  height: auto;
+  width: 400px;
+  justify-self: center;
+  align-self: center;
+}
 
 .box-form-design{
   display: flex;
