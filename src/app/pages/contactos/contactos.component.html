@@ -1,30 +1,28 @@
+
+<div class="box-form-design"></div>
 <div class="contact-container contacto">
     <div class="contact-header text-center py-8">
+      <br>
       <h1 class="text-3xl font-bold text-pink-700">Contáctanos</h1>
-      <p class="mt-4">Estamos aquí para ayudarte. Escríbenos o visítanos.</p>
     </div>
-    <div class="contact-content grid grid-cols-1 md:grid-cols-2 gap-8 py-8">
-      <div class="contact-info bg-white p-6 rounded-lg shadow-md">
-        <h2 class="text-2xl font-semibold text-pink-700">Información de Contacto</h2>
-        <p class="mt-4"><strong>Email:</strong> {{ contact.email }}</p>
-        <p class="mt-2"><strong>Teléfono:</strong> {{ contact.phone }}</p>
-        <p class="mt-2"><strong>Dirección:</strong> {{ contact.address }}</p>
-      </div>
-      <div class="contact-form bg-white p-6 rounded-lg shadow-md">
-        <h2 class="text-2xl font-semibold text-pink-700">Envíanos un Mensaje</h2>
+
+      <div class="box-form-design">
+        <div class="flex justify-center items-center min-h-screen formulario">
+          <div class="w-full max-w-md bg-white rounded-lg shadow-lg p-6 borde-cualquiera">
+        <div class="contact-info bg-white p-6 rounded-lg shadow-md">
+        <h2 class="txt-main mb-4">Envíanos un Mensaje</h2>
         <form class="mt-4 space-y-4">
-          <label for="name" class="block text-gray-700">Nombre</label>
+          <label for="name" class="block text-sm font-medium text-gray-700 txt-form">Nombre</label>
           <input type="text" id="name" name="name" required class="w-full p-2 border border-gray-300 rounded-lg">
   
-          <label for="email" class="block text-gray-700">Correo Electrónico</label>
+          <label for="email" class="block text-sm font-medium text-gray-700 txt-form">Correo Electrónico</label>
           <input type="email" id="email" name="email" required class="w-full p-2 border border-gray-300 rounded-lg">
   
-          <label for="message" class="block text-gray-700">Mensaje</label>
+          <label for="message" class="block text-sm font-medium text-gray-700 txt-form">Mensaje</label>
           <textarea id="message" name="message" rows="5" required class="w-full p-2 border border-gray-300 rounded-lg"></textarea>
   
-          <button type="submit" class="w-full py-2 px-4 bg-pink-700 text-white font-semibold rounded-lg shadow-md hover:bg-pink-800 focus:outline-none focus:ring-2 focus:ring-pink-600">Enviar</button>
+          <button type="submit" class="btn-submit">Enviar</button>
         </form>
       </div>
     </div>
-  </div>
-  
+  </div> </div> </div>
